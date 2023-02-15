@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
 
-import React, { forwardRef, useState } from 'react';
-import FlipMove from 'react-flip-move';
+import React, { forwardRef, useState, useEffect } from 'react';
+import { Flipper, Flipped } from 'react-flip-toolkit'
 
 import { FlippingCard } from './FlippingCard.js';
 
@@ -39,7 +39,7 @@ const RankingProblemCard = ({ targetIndex, problem }) => {
 
       {
         problem.pending_queue.map((p, i) => {
-          let classNames = [ `team-problem-${problem.id}`, classes.teamProblem ]
+          let classNames = [ classes.teamProblemCard, classes.teamProblem ]
           if (p.result === 'Yes') {
             classNames.push(classes.teamProblemAccepted)
           } else if (i + 1 < problem.pending_queue.length) {
@@ -50,10 +50,12 @@ const RankingProblemCard = ({ targetIndex, problem }) => {
             classNames.push(classes.teamProblemPartial)
           } else if (p.penalty_tries > 0) {
             classNames.push(classes.teamProblemAttempted)
+          } else {
+            // return <div></div> // is this required?
           }
           return (
-            <div key={i} className={classNames.join(' ')} style={{ display: 'flex', alignItems: 'center' }}>
-            <span>
+            <div key={i} className={classNames.join(' ')}>
+              <span>
               {p.score}/<small>{p.result === 'Yes' ? '+' : '-'}{p.penalty_tries}</small>
               {
                 M - i === 1 ? null :
@@ -62,8 +64,8 @@ const RankingProblemCard = ({ targetIndex, problem }) => {
                   <small>{`? +${M - i - 1}`}</small>
                   </>
               }
-            </span>
-          </div>
+              </span>
+            </div>
           );
         })
       }
@@ -71,37 +73,39 @@ const RankingProblemCard = ({ targetIndex, problem }) => {
   )
 }
 
-const RankingRow = forwardRef(({ targetIndices, team }, ref) => {
+function RankingRow({ targetIndices, team }) {
   const classes = useStyles();
   return (
-    <tr ref={ref} className={`team-${team.id}}`}>
-      {/*<td className="team-total-solved">{team.total_solved}</td>*/}
-      <td className={classes.teamRank}>{rankStr(team.rank)}</td>
-      <td className={classes.teamName}>{team.name}</td>
-      {
-        team.problem_info.map((problem, i) => 
-          <td key={problem.id}>
-            <RankingProblemCard targetIndex={targetIndices[i]} problem={problem} />
-          </td>
-        )
-      }
-      <td className={classes.teamTotalScore}>
-        {team.total_score}<small>&nbsp;pt.</small>
-      </td>
-      <td className={classes.teamTotalPenalty}>
-        {team.total_penalty}
-      </td>
-          {/*
+    <Flipped flipId={team.id} element={null} className={`team-${team.id}}`}>
+      <tr>
+        {/*<td className="team-total-solved">{team.total_solved}</td>*/}
+        <td className={classes.teamRank}>{rankStr(team.rank)}</td>
+        <td className={classes.teamName}>{team.name}</td>
+        {
+          team.problem_info.map((problem, i) => 
+            <td key={problem.id}>
+              <RankingProblemCard targetIndex={targetIndices[i]} problem={problem} />
+            </td>
+          )
+        }
+            <td className={classes.teamTotalScore}>
+              {team.total_score}<small>&nbsp;pt.</small>
+            </td>
+            <td className={classes.teamTotalPenalty}>
+              {team.total_penalty}
+            </td>
+            {/*
       <td className="team-balloons"></td>
       <td className="team-title">
         <span className="team-represents"></span>
         </td>
         */}
-    </tr>
+      </tr>
+    </Flipped>
   )
-})
+}
 
-const Ranking = () => {
+function Ranking() {
   const [teams, setTeams] = useState(() => reRank(getInitialTeamsInfo()));
   const [targetIndices, setTargetIndices] = useState(() => {
     let initTargetIndices = {};
@@ -166,6 +170,22 @@ const Ranking = () => {
     });
   };
 
+  useEffect(() => {
+    const handleKeyDown = event => {
+      console.log(`Key: ${event.key} with keycode ${event.keyCode} has been pressed`);
+      if (event.key === 'Enter') {
+        flipOne();
+      } else if (event.key === 's') {
+        sortAll();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   // <button onClick={() => setShowIndex(0)}>set 0</button>
   // <button onClick={() => setShowIndex(1)}>set 1</button>
   // <button onClick={() => setShowIndex(2)}>set 2</button>
@@ -185,8 +205,6 @@ const Ranking = () => {
       <span id="clock-icon" className="icon"></span>
       <span id="feed-one-icon" className="icon hoverable"></span>
       <h1 id="contest-title">{contestInfo.title}</h1>
-      <button onClick={flipOne}>flip one</button>
-      <button onClick={sortAll}>sortAll</button>
     </div>
     <table>
       <thead>
@@ -202,12 +220,14 @@ const Ranking = () => {
           <th className={classes.teamTotalPenalty}>Penalty</th>
         </tr>
       </thead>
-      <FlipMove typeName="tbody">
-        {teams.map(team => (
-          <RankingRow key={team.id} team={team} targetIndices={targetIndices[team.id]} />
-        ))}
-        </FlipMove>
-      </table>
+      <Flipper flipKey={teams.map(team => team.id)} element="tbody">
+        {
+          teams.map(team => (
+            <RankingRow key={team.id} team={team} targetIndices={targetIndices[team.id]} />
+          ))
+        }
+      </Flipper>
+    </table>
     </>
   );
 };

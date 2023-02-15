@@ -38,7 +38,6 @@ function updateProblemWithSingleRun(team, problem, run) {
 }
 
 export function reRank(teams) {
-  console.log('rerank');
   teams = teams.map(team => {
     const { problem_info } = team;
     const total_score   = sum(problem_info.map(problem => problem.score));

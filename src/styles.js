@@ -4,28 +4,31 @@ export const useStyles = makeStyles({
 
     teamProblemAccepted : {
         backgroundColor: 'lightgreen',
-        borderRadius: '4px',
     },
 
     teamProblemPartial : {
         backgroundColor: 'orange',
-        borderRadius: '4px',
     },
 
     teamProblemTried : {
         backgroundColor: 'red',
-        borderRadius: '4px',
     },
 
     teamProblemPending : {
         backgroundColor: 'lightblue',
-        borderRadius: '4px',
     },
 
     teamProblem: {
         width: 70,
         height: 90,
         textAlign: 'center'
+    },
+
+    teamProblemCard: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: '4px',
     },
 
     teamRank: {
