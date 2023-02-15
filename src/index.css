@@ -7,7 +7,64 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* code { */
+/*   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', */
+/*     monospace; */
+/* } */
+
+@keyframes infiniteRotate {  
+    100% { transform: rotateX(360deg); }
 }
+
+.rotate-element {
+    animation: infiniteRotate 2s linear infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.blink-element {
+    animation-duration: 0.3s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+table {
+    width: 100%;
+}
+
+/* .solved-0 .solved-count { background-color: #4f0305; } */
+/* .solved-1 .solved-count { background-color: #682313; } */
+/* .solved-2 .solved-count { background-color: #4f2203; } */
+/* .solved-3 .solved-count { background-color: #684913; } */
+/* .solved-4 .solved-count { background-color: #4f4403; } */
+/* .solved-5 .solved-count { background-color: #616813; } */
+/* .solved-6 .solved-count { background-color: #374f03; } */
+/* .solved-7 .solved-count { background-color: #3b6813; } */
+/* .solved-8 .solved-count { background-color: #164f03; } */
+
+/* .problem-result.problem-201 b:before { content: "A"; } */
+/* .balloon.problem-201 { background-image: url(assets/balloons/blue.png); } */
+/* .problem-result.problem-202 b:before { content: "B"; } */
+/* .balloon.problem-202 { background-image: url(assets/balloons/blue.png); } */
+/* .problem-result.problem-203 b:before { content: "C"; } */
+/* .balloon.problem-203 { background-image: url(assets/balloons/deeppink.png); } */
+/* .problem-result.problem-204 b:before { content: "D"; } */
+/* .balloon.problem-204 { background-image: url(assets/balloons/yellow.png); } */
+/* .problem-result.problem-205 b:before { content: "E"; } */
+/* .balloon.problem-205 { background-image: url(assets/balloons/red.png); } */
+/* .problem-result.problem-206 b:before { content: "F"; } */
+/* .balloon.problem-206 { background-image: url(assets/balloons/blue.png); } */
+/* .problem-result.problem-207 b:before { content: "G"; } */
+/* .balloon.problem-207 { background-image: url(assets/balloons/deeppink.png); } */
+/* .problem-result.problem-208 b:before { content: "H"; } */
+/* .balloon.problem-208 { background-image: url(assets/balloons/skyblue.png); } */
