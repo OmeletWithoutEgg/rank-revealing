@@ -14,16 +14,16 @@ function updateProblemWithSingleRun(team, problem, run) {
     penalty_tries,
     result,
   } = problem;
-  let important = false;
+  let isImportant = false;
   if (result === 'No') {
     if (run.result === 'Yes') {
       penalty = parseFloat(run.submissionTime) + penalty_tries * 20;
       result = 'Yes';
-      important = true;
+      isImportant = true;
     } else if (result === 'No') {
       penalty_tries += 1;
       if (score < parseFloat(run.score)) {
-        important = true;
+        isImportant = true;
       }
     }
   }
@@ -34,6 +34,7 @@ function updateProblemWithSingleRun(team, problem, run) {
     penalty,
     penalty_tries,
     result,
+    isImportant,
   };
 }
 
@@ -136,9 +137,8 @@ export function getInitialTeamsInfo() {
           penalty,
           penalty_tries,
           result,
-          important: true,
+          isImportant: true,
         }],
-        current_index: 0,
       };
     });
 
@@ -170,6 +170,24 @@ export function getInitialTeamsInfo() {
       };
     });
   }
+
+  teams = teams.map(team => {
+    let { problem_info } = team;
+    problem_info = problem_info.map(problem => {
+      const { pending_queue } = problem;
+      let q = [...pending_queue];
+      q[q.length - 1].isImportant = true;
+      return {
+        ...problem,
+        pending_queue: q,
+      };
+    });
+
+    return {
+      ...team,
+      problem_info,
+    }
+  });
 
   return teams;
 }

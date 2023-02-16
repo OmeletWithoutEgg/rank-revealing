@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 
-import React, { forwardRef, useState, useEffect } from 'react';
+import React, { forwardRef, useState, useEffect, useRef } from 'react';
 import { Flipper, Flipped } from 'react-flip-toolkit'
 
 import { FlippingCard } from './FlippingCard.js';
@@ -23,19 +23,15 @@ const rankStr = rank => {
   }
 };
 
-const RankingProblemCard = ({ targetIndex, problem }) => {
+const RankingProblemCard = ({ targetIndex, problem, onFlipComplete }) => {
   const classes = useStyles();
   const M = problem.pending_queue.length;
   return (
-    <FlippingCard duration={0.3} targetIndex={targetIndex}>
-      {
-        /*
-          <div style={{ backgroundColor: 'red' }}>123</div>
-          <div style={{ backgroundColor: 'green' }}>456</div>
-          <div style={{ backgroundColor: 'blue' }}>789</div>
-          <div style={{ backgroundColor: 'purple' }}>abc</div>
-          */
-      }
+    <FlippingCard duration={0.5} targetIndex={targetIndex} onFlipComplete={onFlipComplete}>
+      {/* <div style={{ backgroundColor: 'red' }}>123</div> */}
+      {/* <div style={{ backgroundColor: 'green' }}>456</div> */}
+      {/* <div style={{ backgroundColor: 'blue' }}>789</div> */}
+      {/* <div style={{ backgroundColor: 'purple' }}>abc</div> */}
 
       {
         problem.pending_queue.map((p, i) => {
@@ -73,39 +69,69 @@ const RankingProblemCard = ({ targetIndex, problem }) => {
   )
 }
 
-function RankingRow({ targetIndices, team }) {
+const RankingRow = forwardRef((props, ref) => {
+  const {
+    revealStatus,
+    onTranslateComplete,
+    onFlipComplete,
+    targetIndices,
+    team
+  } = props;
   const classes = useStyles();
+  const backgroundColor =
+    revealStatus === 'revealed' ? '#ccccff' :
+    revealStatus === 'revealing' ? '#aaaaff' : null
   return (
-    <Flipped flipId={team.id} element={null} className={`team-${team.id}}`}>
-      <tr>
+    <Flipped flipId={team.id} element={null} className={`team-${team.id}}`} onComplete={onTranslateComplete}>
+      <tr ref={ref} style={{ backgroundColor }}>
         {/*<td className="team-total-solved">{team.total_solved}</td>*/}
         <td className={classes.teamRank}>{rankStr(team.rank)}</td>
         <td className={classes.teamName}>{team.name}</td>
         {
           team.problem_info.map((problem, i) => 
             <td key={problem.id}>
-              <RankingProblemCard targetIndex={targetIndices[i]} problem={problem} />
-            </td>
-          )
+              <RankingProblemCard
+                targetIndex={targetIndices[i]}
+                problem={problem}
+                onFlipComplete={onFlipComplete}
+              />
+            </td>)
         }
-            <td className={classes.teamTotalScore}>
-              {team.total_score}<small>&nbsp;pt.</small>
-            </td>
-            <td className={classes.teamTotalPenalty}>
-              {team.total_penalty}
-            </td>
-            {/*
-      <td className="team-balloons"></td>
-      <td className="team-title">
-        <span className="team-represents"></span>
+        <td className={classes.teamTotalScore}>
+          {team.total_score}<small>&nbsp;pt.</small>
         </td>
-        */}
+        <td className={classes.teamTotalPenalty}>
+          {team.total_penalty}
+        </td>
+        {/* <td className="team-balloons"></td> */}
+        {/* <td className="team-title"> */}
+        {/*   <span className="team-represents"></span> */}
+        {/* </td> */}
       </tr>
     </Flipped>
   )
+})
+
+function getLastPending(teams, targetIndices, revealedCount) {
+  for (let i = teams.length - 1 - revealedCount; i >= 0; i--) {
+    for (let j = 0; j < contestInfo.problems.length; j++) {
+      const que = teams[i].problem_info[j].pending_queue;
+      let idx = targetIndices[teams[i].id][j] + 1;
+      if (idx < que.length) {
+        // console.log(que);
+        while (idx < que.length && que[idx].isImportant === false) {
+          idx += 1;
+        }
+        return [i, j, idx];
+      }
+    }
+    return [i, null, null];
+  }
+  throw new Error('unreachable');
 }
 
 function Ranking() {
+  const classes = useStyles();
   const [teams, setTeams] = useState(() => reRank(getInitialTeamsInfo()));
   const [targetIndices, setTargetIndices] = useState(() => {
     let initTargetIndices = {};
@@ -114,33 +140,19 @@ function Ranking() {
     }
     return initTargetIndices;
   });
+  const [revealedCount, setRevealedCount] = useState(0);
 
-  const classes = useStyles();
+  const lastPending = getLastPending(teams, targetIndices, revealedCount);
+  const lastPendingRef = useRef(null);
 
-  const flipOne = () => {
-    const getLastPending = () => {
-      for (let i = teams.length - 1; i >= 0; i--) {
-        for (let j = 0; j < contestInfo.problems.length; j++) {
-          if (targetIndices[teams[i].id][j] + 1 < teams[i].problem_info[j].pending_queue.length) {
-            const team_id = teams[i].id;
-            return [team_id, j];
-          }
-        }
-      }
-      throw new Error('builtin unreachable');
-    };
-
-    const [team_id, problem_position] = getLastPending();
-    let teamTargetIndices = targetIndices[team_id];
-    teamTargetIndices[problem_position] += 1;
-
-    setTargetIndices({
-      ...targetIndices,
-      [team_id]: teamTargetIndices,
-    });
+  const scrollLastPendingIntoView = () => {
+    if (lastPendingRef.current) {
+      lastPendingRef.current.scrollIntoView({behavior: 'smooth', block: 'center'})
+    }
   };
 
   const sortAll = () => {
+    console.log('sortAll');
     setTeams(teams => {
       teams = teams.map(team => {
         let { problem_info } = team;
@@ -171,12 +183,28 @@ function Ranking() {
   };
 
   useEffect(() => {
+    const flipOne = () => {
+      scrollLastPendingIntoView();
+
+      const [team_position, problem_position, queue_position] = lastPending;
+      if (problem_position === null) {
+        setRevealedCount(revealedCount + 1);
+        return;
+      }
+      const team_id = teams[team_position].id;
+      let teamTargetIndices = targetIndices[team_id];
+      teamTargetIndices[problem_position] = queue_position;
+
+      setTargetIndices({
+        ...targetIndices,
+        [team_id]: teamTargetIndices,
+      });
+    };
+
     const handleKeyDown = event => {
-      console.log(`Key: ${event.key} with keycode ${event.keyCode} has been pressed`);
+      // console.log(`Key: ${event.key} with keycode ${event.keyCode} has been pressed`);
       if (event.key === 'Enter') {
         flipOne();
-      } else if (event.key === 's') {
-        sortAll();
       }
     };
 
@@ -184,20 +212,12 @@ function Ranking() {
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [teams, targetIndices, lastPending, revealedCount]);
 
-  // <button onClick={() => setShowIndex(0)}>set 0</button>
-  // <button onClick={() => setShowIndex(1)}>set 1</button>
-  // <button onClick={() => setShowIndex(2)}>set 2</button>
-  // <button onClick={() => setShowIndex(3)}>set 3</button>
-  // <FlippingCard duration={0.3} targetIndex={showIndex}>
-  // <div>0+1</div>
-  // <div>50+2</div>
-  // <div>60+3</div>
-  // <div>80+4</div>
-  // <div>90+5</div>
-  // <div>100+6</div>
-  // </FlippingCard>
+  useEffect(() => {
+    scrollLastPendingIntoView();
+  }, [lastPending]);
+
 
   return (
     <>
@@ -222,8 +242,16 @@ function Ranking() {
       </thead>
       <Flipper flipKey={teams.map(team => team.id)} element="tbody">
         {
-          teams.map(team => (
-            <RankingRow key={team.id} team={team} targetIndices={targetIndices[team.id]} />
+          teams.map((team, i) => (
+            <RankingRow
+              key={team.id}
+              team={team}
+              ref={i === lastPending[0] ? lastPendingRef : null}
+              onTranslateComplete={scrollLastPendingIntoView}
+              onFlipComplete={sortAll}
+              targetIndices={targetIndices[team.id]}
+              revealStatus={i > lastPending[0] ? 'revealed' : i === lastPending[0] ? 'revealing' : 'unrevealed'}
+            />
           ))
         }
       </Flipper>

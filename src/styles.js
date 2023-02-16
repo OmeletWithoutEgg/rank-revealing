@@ -1,13 +1,13 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { createUseStyles } from "react-jss";
 
-export const useStyles = makeStyles({
+export const useStyles = createUseStyles({
 
     teamProblemAccepted : {
         backgroundColor: 'lightgreen',
     },
 
     teamProblemPartial : {
-        backgroundColor: 'orange',
+        backgroundColor: '#ff3300',
     },
 
     teamProblemTried : {

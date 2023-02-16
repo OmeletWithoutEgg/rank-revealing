@@ -5,6 +5,15 @@ function FlippingCardFace({ children, duration, isVisible, onAnimationFinish }) 
   const ref = useRef(null);
 
   useEffect(() => {
+    const current = ref.current;
+
+    const handleTransitionStart = (event) => {
+      // if (!isScrolledIntoView(current)) {
+      //   current.scrollIntoView();
+      // }
+      // current.scrollIntoView({behavior: 'smooth', block: 'center'});
+    };
+
     const handleTransitionEnd = (event) => {
       if (event.propertyName === 'transform') {
         // console.log('Transition has finished', children.props, isVisible)
@@ -15,13 +24,14 @@ function FlippingCardFace({ children, duration, isVisible, onAnimationFinish }) 
       }
     };
 
-    const current = ref.current;
     if (current) {
+      current.addEventListener('transitionstart', handleTransitionStart)
       current.addEventListener('transitionend', handleTransitionEnd)
     }
 
     return () => {
       if (current) {
+        current.removeEventListener('transitionstart', handleTransitionStart)
         current.removeEventListener('transitionend', handleTransitionEnd)
       }
     };
@@ -44,7 +54,7 @@ function FlippingCardFace({ children, duration, isVisible, onAnimationFinish }) 
     </div>
 }
 
-export function FlippingCard({ duration, targetIndex, children }) {
+export function FlippingCard({ duration, targetIndex, children, onFlipComplete }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const N = React.Children.count(children);
   // if (targetIndex !== null) {
@@ -60,6 +70,12 @@ export function FlippingCard({ duration, targetIndex, children }) {
   }
 
   useEffect(syncTargetIndex, [targetIndex, N])
+
+  const onAnimationFinish = () => {
+    syncTargetIndex();
+    onFlipComplete();
+  };
+
   
   return (
     <div style={{ position: 'relative' }}>
@@ -69,7 +85,7 @@ export function FlippingCard({ duration, targetIndex, children }) {
             key={index}
             isVisible={index === currentIndex}
             duration={duration}
-            onAnimationFinish={syncTargetIndex}
+            onAnimationFinish={onAnimationFinish}
           >
             {child}
           </FlippingCardFace>
