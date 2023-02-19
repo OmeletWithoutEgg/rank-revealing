@@ -4,9 +4,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
-import { FlippingCard } from './FlippingCard.js';
 import { useStyles } from './styles.js';
-import { getInitialTeamsInfo, reRank, updateWithSingleEvent } from './ranking.js';
+import { FlippingCard } from './FlippingCard.js';
+import {
+  listenNextFeed,
+  getInitialTeamsInfo,
+  reRank,
+  updateWithSingleEvent 
+} from './Control.js';
 
 import contestInfo from './data/contest.json';
 
@@ -47,7 +52,7 @@ function RankingProblemCard({ problem, onRevealed, isActive }) {
     return {
       ...p,
       pending_tries: M - i - 1,
-      isImportantFace: p.isImportant,
+      isImportantFace: p.is_important,
       onFlippingComplete: () => {
         let q = { ...p };
         q.pending_tries = M - i - 1;
@@ -78,6 +83,10 @@ function RankingProblemCard({ problem, onRevealed, isActive }) {
           <small>
             {p.result === 'Yes' ? '+' : '-'}{p.penalty_tries}
           </small>
+          {/* <br /> */}
+          {/* <small> */}
+          {/*   @{p.effective_submission_time} */}
+          {/* </small> */}
           {
             p.pending_tries === 0 ? null :
               <>
@@ -131,22 +140,13 @@ function RankingRow(props) {
   useEffect(() => {
     if (team.revealStatus !== 'revealing')
       return;
-    if (!team.isFinal)
+    if (!team.is_final)
       return;
-    const handleKeyDown = event => {
-      if (event.key === 'Enter') {
-        onNoClimb();
-        return;
-      }
-    };
-    document.addEventListener('keydown', handleKeyDown);
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [team.revealStatus, team.isFinal, onNoClimb]);
+    return listenNextFeed(onNoClimb);
+  }, [team.revealStatus, team.is_final, onNoClimb]);
 
   const revealingProblem =
-    team.problem_details.find(problem => problem.isFinal === false);
+    team.problem_details.find(problem => problem.is_final === false);
 
   return (
     <motion.tr
@@ -187,6 +187,7 @@ function RankingRow(props) {
       </td>
       <td className={classes.teamTotalPenalty}>
         {team.total_penalty}
+        {/* {team.last_effective_submission_time} */}
       </td>
       {/* <td className="team-balloons"></td> */}
       {/* <td className="team-title"> */}

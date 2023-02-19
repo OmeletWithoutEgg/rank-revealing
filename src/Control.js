@@ -1,11 +1,20 @@
 import contestInfo from './data/contest.json';
 import runsInfo from './data/runs.json';
-
-let { teams, problems } = contestInfo;
-
-const sum = arr => arr.reduce((a, b) => a + b, 0)
-
 const freeze_start = 60 * 4 - 60; // 60 minute before contest end
+
+export function listenNextFeed(callbackFn) {
+  const handleKeyDown = event => {
+    if (event.key !== 'Enter') return;
+    callbackFn();
+  };
+  document.addEventListener('keydown', handleKeyDown);
+  return () => {
+    document.removeEventListener('keydown', handleKeyDown);
+  };
+}
+
+const arraySum = arr => arr.reduce((a, b) => a + b, 0)
+const arrayMax = arr => arr.reduce((a, b) => Math.max(a, b), -1)
 
 function updateProblemWithSingleRun(team, problem, run) {
   let {
@@ -13,17 +22,23 @@ function updateProblemWithSingleRun(team, problem, run) {
     penalty,
     penalty_tries,
     result,
+    effective_submission_id,
+    effective_submission_time,
   } = problem;
-  let isImportant = false;
+  let is_important = false;
   if (result === 'No') {
     if (run.result === 'Yes') {
       penalty = parseFloat(run.submissionTime) + penalty_tries * 20;
       result = 'Yes';
-      isImportant = true;
+      is_important = true;
+      effective_submission_id = run.id;
+      effective_submission_time = parseFloat(run.submissionTime);
     } else if (result === 'No') {
       penalty_tries += 1;
       if (score < parseFloat(run.score)) {
-        isImportant = true;
+        is_important = true;
+        effective_submission_id = run.id;
+        effective_submission_time = parseFloat(run.submissionTime);
       }
     }
   }
@@ -34,21 +49,32 @@ function updateProblemWithSingleRun(team, problem, run) {
     penalty,
     penalty_tries,
     result,
-    isImportant,
-    last_submission_id: run.id,
+    is_important,
+    effective_submission_id,
+    effective_submission_time,
   };
 }
 
-// event: { problem_id, team_id, score, penalty, penalty_tries, result }
+// event: {
+//  submission_id,
+//  submission_time,
+//  problem_id, team_id,
+//  score, penalty, penalty_tries, result
+// }
+
 export function updateWithSingleEvent(orgTeams, event) {
   const {
+    submission_id,
+    submission_time,
     problem_id,
     team_id,
     score,
     penalty,
     penalty_tries,
     result,
-    isFinal,
+    is_final,
+    effective_submission_id,
+    effective_submission_time,
   } = event;
   const newTeams = reRank(orgTeams.map(team => {
     if (team.id !== team_id)
@@ -63,14 +89,16 @@ export function updateWithSingleEvent(orgTeams, event) {
         penalty,
         penalty_tries,
         result,
-        isFinal,
+        is_final: is_final || problem.is_final,
+        effective_submission_id,
+        effective_submission_time,
       };
     });
 
     return {
       ...team,
       problem_details,
-      isFinal: problem_details.every(problem => problem.isFinal),
+      is_final: problem_details.every(problem => problem.is_final),
     }
   }));
 
@@ -80,22 +108,30 @@ export function updateWithSingleEvent(orgTeams, event) {
 export function reRank(teams) {
   teams = teams.map(team => {
     const { problem_details } = team;
-    const total_score   = sum(problem_details.map(problem => problem.score));
-    const total_penalty = sum(problem_details.map(problem => problem.penalty));
-    const total_solved  = sum(problem_details.map(problem => problem.result === 'Yes' ? 1 : 0));
+    const total_score   = arraySum(problem_details.map(problem => problem.score));
+    const total_penalty = arraySum(problem_details.map(problem => problem.penalty));
+    const total_solved  = arraySum(problem_details.map(problem => problem.result === 'Yes' ? 1 : 0));
+    const last_effective_submission_id =
+      arrayMax(problem_details.map(problem => problem.effective_submission_id));
+    const last_effective_submission_time =
+      arrayMax(problem_details.map(problem => problem.effective_submission_time));
 
     return {
       ...team,
       total_score,
       total_penalty,
       total_solved,
+      last_effective_submission_id,
+      last_effective_submission_time,
     };
   });
 
   teams = teams.sort((a, b) => {
     if (a.total_score !== b.total_score)
       return -(a.total_score - b.total_score);
+    // if (a.total_penalty !== b.total_penalty)
     return a.total_penalty - b.total_penalty;
+    // return a.last_effective_submission_time - b.last_effective_submission_time;
   });
 
   // add rank
@@ -111,25 +147,27 @@ export function reRank(teams) {
 
 // get teams info before freezing
 export function getInitialTeamsInfo() {
+let { teams, problems } = contestInfo;
 
-  const initialProblemInfo = problems.map(problem => ({
+  const initialProblemDetails = problems.map(problem => ({
     id: problem.id,
     score: 0,
     penalty: 0,
     penalty_tries: 0,
     result: 'No',
-    // last_update: 0,
+    // update: 0,
     // TODO add this for consistence with TIOJ ioicamp style
-    last_submission_id: -1,
+    effective_submission_id: -1,
+    effective_submission_time: 0,
   }));
 
   teams = teams.map(team => {
     return {
-      problem_details: initialProblemInfo,
+      problem_details: initialProblemDetails,
       total_score: 0,
       total_penalty: 0,
       total_solved: 0,
-      // last_update: 0,
+      // update: 0,
       ...team
     }
   });
@@ -170,6 +208,8 @@ export function getInitialTeamsInfo() {
         penalty,
         penalty_tries,
         result,
+        effective_submission_id,
+        effective_submission_time
       } = problem;
 
       return {
@@ -179,7 +219,9 @@ export function getInitialTeamsInfo() {
           penalty,
           penalty_tries,
           result,
-          isImportant: true,
+          effective_submission_id,
+          effective_submission_time,
+          is_important: true,
         }],
       };
     });
@@ -218,20 +260,20 @@ export function getInitialTeamsInfo() {
     problem_details = problem_details.map(problem => {
       const { hidden_results } = problem;
       let q = [...hidden_results];
-      q[q.length - 1].isImportant = true;
-      q[q.length - 1].isFinal = true; // ?
-      const isFinal = q.length === 1;
+      q[q.length - 1].is_important = true;
+      q[q.length - 1].is_final = true; // ?
+      const is_final = q.length === 1;
       return {
         ...problem,
         hidden_results: q,
-        isFinal,
+        is_final,
       };
     });
 
     return {
       ...team,
       problem_details,
-      isFinal: problem_details.every(problem => problem.isFinal),
+      is_final: problem_details.every(problem => problem.is_final),
     }
   });
 

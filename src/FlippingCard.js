@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import { listenNextFeed } from './Control.js';
+
 // faces: [{
 //   onFlippingComplete: function
 //   isImportantFace: bool
@@ -21,24 +23,18 @@ export function FlippingCard({ duration, faces, isActive, renderFace }) {
   useEffect(() => {
     if (isActive === false)
       return;
-    const handleKeyDown = event => {
-      if (event.key === 'Enter') {
-        const isImportant = faces.map(face => face.isImportantFace);
+
+    return listenNextFeed(() => {
+        const isImportantFace = faces.map(face => face.isImportantFace);
 
         if (targetIndex + 1 < N) {
           let nextTargetIndex = targetIndex + 1;
-          while (nextTargetIndex + 1 < N && !isImportant[nextTargetIndex]) {
+          while (nextTargetIndex + 1 < N && !isImportantFace[nextTargetIndex]) {
             nextTargetIndex += 1;
           }
           setTargetIndex(nextTargetIndex);
         }
-      }
-    };
-
-    document.addEventListener('keydown', handleKeyDown);
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-    };
+    });
   }, [targetIndex, isActive, N, faces]);
 
   const backFace = { rotateX: 180, position: 'absolute' };
