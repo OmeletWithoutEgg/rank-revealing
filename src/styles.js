@@ -20,7 +20,6 @@ export const useStyles = createUseStyles({
 
     teamProblem: {
         width: 70,
-        height: 90,
         textAlign: 'center'
     },
 
@@ -41,14 +40,32 @@ export const useStyles = createUseStyles({
 
     teamTotalScore: {
         width: 70,
-        height: 90,
         textAlign: 'center'
     },
 
     teamTotalPenalty: {
         width: 70,
-        height: 90,
         textAlign: 'center'
+    },
+
+    root: {
+        width: '100%',
+        "& thead": {
+            "& tr": { height: 30 },
+        },
+        "& tbody": {
+            "& tr, & div": { height: 90 },
+        }
+    },
+
+    stickyHead: {
+        overflow: 'auto',
+        "& thead": {
+            "& th": {
+                position: 'sticky',
+                top: 0, zIndex: 1, backgroundColor: 'pink',
+            },
+        }
     },
 
 });

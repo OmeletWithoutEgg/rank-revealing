@@ -1,233 +1,248 @@
 // import logo from './logo.svg';
 // import './App.css';
 
-import React, { forwardRef, useState, useEffect, useRef } from 'react';
-import { Flipper, Flipped } from 'react-flip-toolkit'
+import React, { useState, useEffect, useRef } from 'react';
 
 import { FlippingCard } from './FlippingCard.js';
 
 import { useStyles } from './styles.js';
-import { getInitialTeamsInfo, reRank } from './ranking.js';
+import { getInitialTeamsInfo, reRank, updateWithSingleEvent } from './ranking.js';
 import contestInfo from './data/contest.json';
+import { motion } from 'framer-motion';
 
 const rankStr = rank => {
-  rank %= 100;
-  if (rank % 10 === 1 && rank !== 11) {
+  if (rank % 10 === 1 && rank % 100 !== 11) {
     return rank + "st";
-  } else if (rank % 10 === 2 && rank !== 12) {
+  } else if (rank % 10 === 2 && rank % 100 !== 12) {
     return rank + "nd";
-  } else if (rank % 10 === 3 && rank !== 13) {
+  } else if (rank % 10 === 3 && rank % 100 !== 13) {
     return rank + "rd";
   } else {
     return rank + "th";
   }
 };
 
-const RankingProblemCard = ({ targetIndex, problem, onFlipComplete }) => {
+function RankingProblemCard({ problem, onRevealed, isActive }) {
   const classes = useStyles();
   const M = problem.pending_queue.length;
-  return (
-    <FlippingCard duration={0.5} targetIndex={targetIndex} onFlipComplete={onFlipComplete}>
-      {/* <div style={{ backgroundColor: 'red' }}>123</div> */}
-      {/* <div style={{ backgroundColor: 'green' }}>456</div> */}
-      {/* <div style={{ backgroundColor: 'blue' }}>789</div> */}
-      {/* <div style={{ backgroundColor: 'purple' }}>abc</div> */}
-
-      {
-        problem.pending_queue.map((p, i) => {
-          let classNames = [ classes.teamProblemCard, classes.teamProblem ]
-          if (p.result === 'Yes') {
-            classNames.push(classes.teamProblemAccepted)
-          } else if (i + 1 < problem.pending_queue.length) {
-            classNames.push(classes.teamProblemPending)
-            // classNames.push('blink-element')
-            // classNames.push('rotate-element')
-          } else if (p.score > 0) {
-            classNames.push(classes.teamProblemPartial)
-          } else if (p.penalty_tries > 0) {
-            classNames.push(classes.teamProblemAttempted)
-          } else {
-            // return <div></div> // is this required?
-          }
-          return (
-            <div key={i} className={classNames.join(' ')}>
-              <span>
-              {p.score}/<small>{p.result === 'Yes' ? '+' : '-'}{p.penalty_tries}</small>
-              {
-                M - i === 1 ? null :
-                  <>
-                  <br />
-                  <small>{`? +${M - i - 1}`}</small>
-                  </>
-              }
-              </span>
-            </div>
-          );
-        })
-      }
-    </FlippingCard>
-  )
-}
-
-const RankingRow = forwardRef((props, ref) => {
-  const {
-    revealStatus,
-    onTranslateComplete,
-    onFlipComplete,
-    targetIndices,
-    team
-  } = props;
-  const classes = useStyles();
-  const backgroundColor =
-    revealStatus === 'revealed' ? '#ccccff' :
-    revealStatus === 'revealing' ? '#aaaaff' : null
-  return (
-    <Flipped flipId={team.id} element={null} className={`team-${team.id}}`} onComplete={onTranslateComplete}>
-      <tr ref={ref} style={{ backgroundColor }}>
-        {/*<td className="team-total-solved">{team.total_solved}</td>*/}
-        <td className={classes.teamRank}>{rankStr(team.rank)}</td>
-        <td className={classes.teamName}>{team.name}</td>
-        {
-          team.problem_info.map((problem, i) => 
-            <td key={problem.id}>
-              <RankingProblemCard
-                targetIndex={targetIndices[i]}
-                problem={problem}
-                onFlipComplete={onFlipComplete}
-              />
-            </td>)
-        }
-        <td className={classes.teamTotalScore}>
-          {team.total_score}<small>&nbsp;pt.</small>
-        </td>
-        <td className={classes.teamTotalPenalty}>
-          {team.total_penalty}
-        </td>
-        {/* <td className="team-balloons"></td> */}
-        {/* <td className="team-title"> */}
-        {/*   <span className="team-represents"></span> */}
-        {/* </td> */}
-      </tr>
-    </Flipped>
-  )
-})
-
-function getLastPending(teams, targetIndices, revealedCount) {
-  for (let i = teams.length - 1 - revealedCount; i >= 0; i--) {
-    for (let j = 0; j < contestInfo.problems.length; j++) {
-      const que = teams[i].problem_info[j].pending_queue;
-      let idx = targetIndices[teams[i].id][j] + 1;
-      if (idx < que.length) {
-        // console.log(que);
-        while (idx < que.length && que[idx].isImportant === false) {
-          idx += 1;
-        }
-        return [i, j, idx];
-      }
-    }
-    return [i, null, null];
-  }
-  throw new Error('unreachable');
-}
-
-function Ranking() {
-  const classes = useStyles();
-  const [teams, setTeams] = useState(() => reRank(getInitialTeamsInfo()));
-  const [targetIndices, setTargetIndices] = useState(() => {
-    let initTargetIndices = {};
-    for (let team of contestInfo.teams) {
-      initTargetIndices[team.id] = contestInfo.problems.map(_ => 0);
-    }
-    return initTargetIndices;
+  const faces = problem.pending_queue.map((p, i) => {
+    return {
+      ...p,
+      pending_tries: M - i - 1,
+      isImportantFace: p.isImportant,
+      onFlippingComplete: () => {
+        let q = { ...p };
+        q.pending_tries = M - i - 1;
+        onRevealed(q);
+      },
+    };
   });
-  const [revealedCount, setRevealedCount] = useState(0);
 
-  const lastPending = getLastPending(teams, targetIndices, revealedCount);
-  const lastPendingRef = useRef(null);
-
-  const scrollLastPendingIntoView = () => {
-    if (lastPendingRef.current) {
-      lastPendingRef.current.scrollIntoView({behavior: 'smooth', block: 'center'})
+  const renderFace = (p) => {
+    let classNames = [ classes.teamProblemCard, classes.teamProblem ]
+    if (p.result === 'Yes') {
+      classNames.push(classes.teamProblemAccepted)
+    } else if (p.pending_tries > 0) {
+      classNames.push(classes.teamProblemPending)
+      // classNames.push('blink-element')
+      // classNames.push('rotate-element')
+    } else if (p.score > 0) {
+      classNames.push(classes.teamProblemPartial)
+    } else if (p.penalty_tries > 0) {
+      classNames.push(classes.teamProblemAttempted)
+    } else {
+      // return <div></div> // is this required?
     }
+    return (
+      <div className={classNames.join(' ')}>
+        <span>
+          {p.score}/
+          <small>
+            {p.result === 'Yes' ? '+' : '-'}{p.penalty_tries}
+          </small>
+          {
+            p.pending_tries === 0 ? null :
+              <>
+              <br />
+              <small>{`? +${p.pending_tries}`}</small>
+              </>
+          }
+        </span>
+      </div>
+    );
   };
 
-  const sortAll = () => {
-    console.log('sortAll');
-    setTeams(teams => {
-      teams = teams.map(team => {
-        let { problem_info } = team;
-        problem_info = problem_info.map((problem, j) => {
-          const { pending_queue } = problem;
-          const targetIndex = targetIndices[team.id][j];
-          const {
-            score,
-            penalty,
-            penalty_tries,
-            result,
-          } = pending_queue[targetIndex];
-          return {
-            ...problem,
-            score,
-            penalty,
-            penalty_tries,
-            result,
-          }
-        });
-        return {
-          ...team,
-          problem_info,
-        };
-      });
-      return reRank(teams);
-    });
+  return (
+    <FlippingCard
+      duration={0.5}
+      faces={faces}
+      isActive={isActive}
+      renderFace={renderFace}
+    />
+  )
+}
+
+function RankingRow(props) {
+  const {
+    team,
+    onRevealed,
+    onClimbComplete,
+    onNoClimb,
+  } = props;
+  const classes = useStyles();
+  const ref = useRef(null);
+  const backgroundColor =
+    team.revealStatus === 'revealed' ? '#ccccff' :
+    team.revealStatus === 'revealing' ? '#aaaaff' : null
+  const trStyle = {
+    position: 'sticky',
+    top: -100,
+    backgroundColor,
   };
 
   useEffect(() => {
-    const flipOne = () => {
-      scrollLastPendingIntoView();
+    if (ref.current && team.revealStatus === 'revealing') {
+      ref.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end',
+        inline: 'nearest'
+      });
+    }
+  }, [team.revealStatus]);
 
-      const [team_position, problem_position, queue_position] = lastPending;
-      if (problem_position === null) {
-        setRevealedCount(revealedCount + 1);
+  useEffect(() => {
+    if (team.revealStatus !== 'revealing')
+      return;
+    if (!team.isFinal)
+      return;
+    const handleKeyDown = event => {
+      if (event.key === 'Enter') {
+        onNoClimb();
         return;
       }
-      const team_id = teams[team_position].id;
-      let teamTargetIndices = targetIndices[team_id];
-      teamTargetIndices[problem_position] = queue_position;
-
-      setTargetIndices({
-        ...targetIndices,
-        [team_id]: teamTargetIndices,
-      });
     };
-
-    const handleKeyDown = event => {
-      // console.log(`Key: ${event.key} with keycode ${event.keyCode} has been pressed`);
-      if (event.key === 'Enter') {
-        flipOne();
-      }
-    };
-
     document.addEventListener('keydown', handleKeyDown);
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, [teams, targetIndices, lastPending, revealedCount]);
+  }, [team.revealStatus, team.isFinal, onNoClimb]);
 
-  useEffect(() => {
-    scrollLastPendingIntoView();
-  }, [lastPending]);
-
+  const revealingProblem =
+    team.problem_info.find(problem => problem.isFinal === false);
 
   return (
-    <>
-    <div id="header">
-      <span id="clock-icon" className="icon"></span>
-      <span id="feed-one-icon" className="icon hoverable"></span>
-      <h1 id="contest-title">{contestInfo.title}</h1>
-    </div>
-    <table>
+    <motion.tr
+      ref={ref}
+      style={trStyle}
+      layout
+      onLayoutAnimationComplete={onClimbComplete}
+    >
+      {/*<td className="team-total-solved">{team.total_solved}</td>*/}
+      <td className={classes.teamRank}>{rankStr(team.rank)}</td>
+      <td className={classes.teamName}>{team.name}</td>
+      {
+        team.problem_info.map((problem, i) =>  {
+          const onSingleRevealed = updatedProblem => {
+            const event = {
+              ...updatedProblem,
+              problem_id: problem.id,
+              team_id: team.id,
+            };
+            onRevealed(event);
+          };
+          const isActive =
+            team.revealStatus === 'revealing' &&
+            problem.id === revealingProblem?.id;
+          return (
+            <td key={problem.id}>
+            <RankingProblemCard
+              problem={problem}
+              isActive={isActive}
+              onRevealed={onSingleRevealed}
+            />
+            </td>
+          );
+        })
+      }
+      <td className={classes.teamTotalScore}>
+        {team.total_score}<small>&nbsp;pt.</small>
+      </td>
+      <td className={classes.teamTotalPenalty}>
+        {team.total_penalty}
+      </td>
+      {/* <td className="team-balloons"></td> */}
+      {/* <td className="team-title"> */}
+      {/*   <span className="team-represents"></span> */}
+      {/* </td> */}
+    </motion.tr>
+  );
+}
+
+function getLast(revealStatus) {
+  for (let i = revealStatus.length - 1; i >= 0; i--) {
+    if (revealStatus[i] !== 'revealed') {
+      return i;
+    }
+  }
+  return -1;
+  // throw new Error('all revealed');
+}
+
+function Ranking() {
+  const classes = useStyles();
+  const [teams, setTeams] = useState(() => {
+    const initTeam = reRank(getInitialTeamsInfo());
+    initTeam[initTeam.length - 1].revealStatus = 'revealing';
+    return initTeam;
+  });
+
+  // const N = teams.length;
+  const classNames = [classes.root, classes.stickyHead];
+
+  const setLastRevealing = t => {
+    const last = getLast(t.map(team => team.revealStatus));
+    return t.map((team, i) => {
+      const revealStatus =
+        i > last ? 'revealed' :
+        i === last ? 'revealing' : 'notYetChecked';
+      return {
+        ...team,
+        revealStatus,
+      };
+    });
+  }
+
+  const onClimbComplete = () => {
+    setTeams(setLastRevealing);
+  };
+
+  const onNoClimb = () => {
+    setTeams(oldTeams => {
+      let t = oldTeams.map(team => {
+        let { revealStatus } = team;
+        if (revealStatus === 'revealing')
+          revealStatus = 'revealed';
+        return {
+          ...team,
+          revealStatus,
+        };
+      });
+      return setLastRevealing(t);
+    });
+  };
+
+  const onRevealed = (event) => {
+    setTeams(oldTeams => updateWithSingleEvent(oldTeams, event));
+  };
+
+  return (
+    <table className={classNames.join(' ')} cellSpacing="0">
       <thead>
+        {/* <tr> */}
+        {/*   <th colSpan={100} style={{ top: 30 }}> */}
+        {/*     <h1 id="contest-title">{contestInfo.title}</h1> */}
+        {/*   </th> */}
+        {/* </tr> */}
         <tr>
           <th className={classes.teamRank}>Rank</th>
           <th className={classes.teamName}>Participant</th>
@@ -240,30 +255,40 @@ function Ranking() {
           <th className={classes.teamTotalPenalty}>Penalty</th>
         </tr>
       </thead>
-      <Flipper flipKey={teams.map(team => team.id)} element="tbody">
+      <tbody>
         {
+          // ioic_65 有兩段式分數成長
           teams.map((team, i) => (
             <RankingRow
               key={team.id}
               team={team}
-              ref={i === lastPending[0] ? lastPendingRef : null}
-              onTranslateComplete={scrollLastPendingIntoView}
-              onFlipComplete={sortAll}
-              targetIndices={targetIndices[team.id]}
-              revealStatus={i > lastPending[0] ? 'revealed' : i === lastPending[0] ? 'revealing' : 'unrevealed'}
+              onRevealed={onRevealed}
+              onClimbComplete={onClimbComplete}
+              onNoClimb={onNoClimb}
             />
           ))
         }
-      </Flipper>
+      </tbody>
     </table>
-    </>
   );
 };
 
+
 function App() {
+  // const items = Array(90).fill(0).map((_, i) => ({ id: i, text: i + 1 }));
   return (
     <div className="App">
       <Ranking />
+      {/* <List items={items} /> */}
+      {/* <FlippingCard> */}
+      {/*   { */}
+      {/*     items.map(el => { */}
+      {/*       return <FlippingCardFace key={el.id}> */}
+      {/*         <div>nothing{el.id} {el.id*el.id}</div> */}
+      {/*       </FlippingCardFace> */}
+      {/*     }) */}
+      {/*   } */}
+      {/* </FlippingCard> */}
     </div>
   )
 }

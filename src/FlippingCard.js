@@ -1,98 +1,84 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-function FlippingCardFace({ children, duration, isVisible, onAnimationFinish }) {
-  const child = React.Children.only(children)
-  const ref = useRef(null);
+// faces: [{
+//   onFlippingComplete: function
+//   isImportantFace: bool
+// }]
+
+export function FlippingCard({ duration, faces, isActive, renderFace }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [targetIndex, setTargetIndex] = useState(0);
+  const N = faces.length;
+  if (targetIndex < 0 || targetIndex >= N) {
+    throw new Error("Invalid target index in FlippingCard");
+  }
 
   useEffect(() => {
-    const current = ref.current;
+    setCurrentIndex(i => (i >= targetIndex ? i : (i + 1)));
+  }, [targetIndex]);
 
-    const handleTransitionStart = (event) => {
-      // if (!isScrolledIntoView(current)) {
-      //   current.scrollIntoView();
-      // }
-      // current.scrollIntoView({behavior: 'smooth', block: 'center'});
-    };
+  useEffect(() => {
+    if (isActive === false)
+      return;
+    const handleKeyDown = event => {
+      if (event.key === 'Enter') {
+        const isImportant = faces.map(face => face.isImportantFace);
 
-    const handleTransitionEnd = (event) => {
-      if (event.propertyName === 'transform') {
-        // console.log('Transition has finished', children.props, isVisible)
-        if (isVisible) {
-          // A bit hacky that this function only executed once.
-          onAnimationFinish()
+        if (targetIndex + 1 < N) {
+          let nextTargetIndex = targetIndex + 1;
+          while (nextTargetIndex + 1 < N && !isImportant[nextTargetIndex]) {
+            nextTargetIndex += 1;
+          }
+          setTargetIndex(nextTargetIndex);
         }
       }
     };
 
-    if (current) {
-      current.addEventListener('transitionstart', handleTransitionStart)
-      current.addEventListener('transitionend', handleTransitionEnd)
-    }
-
+    document.addEventListener('keydown', handleKeyDown);
     return () => {
-      if (current) {
-        current.removeEventListener('transitionstart', handleTransitionStart)
-        current.removeEventListener('transitionend', handleTransitionEnd)
-      }
+      document.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isVisible, onAnimationFinish]);
+  }, [targetIndex, isActive, N, faces]);
 
-  return <div
-      ref={ref}
-      style={{
-          WebkitBackfaceVisibility: 'hidden',
-          backfaceVisibility: 'hidden',
-          transform: isVisible ? 'rotateX(0deg)' : 'rotateX(180deg)',
-          transformStyle: 'preserve-3d',
-          transition: `transform ${duration}s linear`,
-          position: isVisible ? 'relative' : 'absolute',
-          left: 0,
-          top: 0,
-      }}
-    >
-      {child}
-    </div>
-}
+  const backFace = { rotateX: 180, position: 'absolute' };
+  const frontFace = { rotateX: 0, position: 'relative' };
 
-export function FlippingCard({ duration, targetIndex, children, onFlipComplete }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const N = React.Children.count(children);
-  // if (targetIndex !== null) {
-    if (targetIndex < 0 || targetIndex >= N) {
-      throw new Error("Invalid target index in FlippingCard");
-    }
-  // }
-
-  const syncTargetIndex = () => {
-    // if (targetIndex !== null) {
-      setCurrentIndex(i => (i === targetIndex ? i : (i + 1) % N))
-    // }
-  }
-
-  useEffect(syncTargetIndex, [targetIndex, N])
-
-  const onAnimationFinish = () => {
-    syncTargetIndex();
-    onFlipComplete();
-  };
-
-  
   return (
-    <div style={{ position: 'relative' }}>
+    <AnimatePresence>
       {
-        React.Children.map(children, (child, index) =>
-          <FlippingCardFace
-            key={index}
-            isVisible={index === currentIndex}
-            duration={duration}
-            onAnimationFinish={onAnimationFinish}
-          >
-            {child}
-          </FlippingCardFace>
-        )
+        faces.map((face, index) => {
+          const onAnimationComplete = (style) => {
+            if (currentIndex < targetIndex) {
+              // here it might trigger multiple times?
+              // TODO do it only when style is frontFace
+              // console.log(currentIndex, style);
+              setCurrentIndex(currentIndex + 1);
+            } else {
+              face.onFlippingComplete();
+            }
+          };
+          return index !== currentIndex ? null : (
+            <motion.div
+              key={index}
+              initial={index === 0 ? false : backFace}
+              animate={frontFace}
+              exit={backFace}
+              transition={{ duration }}
+              style={{
+                WebkitBackfaceVisibility: 'hidden',
+                backfaceVisibility: 'hidden',
+                transformStyle: 'preserve-3d',
+              }}
+              onAnimationComplete={onAnimationComplete}
+            >
+              {renderFace(face, index)}
+            </motion.div>
+          );
+        })
       }
-    </div>
-  )
+    </AnimatePresence>
+  );
 }
 
 // vim:ts=2:sts=2:sw=2

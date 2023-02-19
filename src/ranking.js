@@ -35,7 +35,46 @@ function updateProblemWithSingleRun(team, problem, run) {
     penalty_tries,
     result,
     isImportant,
+    last_submission_id: run.id,
   };
+}
+
+// event: { problem_id, team_id, score, penalty, penalty_tries, result }
+export function updateWithSingleEvent(orgTeams, event) {
+  const {
+    problem_id,
+    team_id,
+    score,
+    penalty,
+    penalty_tries,
+    result,
+    isFinal,
+  } = event;
+  const newTeams = reRank(orgTeams.map(team => {
+    if (team.id !== team_id)
+      return team;
+    let { problem_info } = team;
+    problem_info = problem_info.map(problem => {
+      if (problem.id !== problem_id)
+        return problem;
+      return {
+        ...problem,
+        score,
+        penalty,
+        penalty_tries,
+        result,
+        isFinal: isFinal || problem.isFinal,
+      };
+    });
+
+    return {
+      ...team,
+      problem_info,
+      isFinal: problem_info.every(problem => problem.isFinal),
+    }
+  }));
+
+  return newTeams;
 }
 
 export function reRank(teams) {
@@ -79,6 +118,9 @@ export function getInitialTeamsInfo() {
     penalty: 0,
     penalty_tries: 0,
     result: 'No',
+    // last_update: 0,
+    // TODO add this for consistence with TIOJ ioicamp style
+    last_submission_id: -1,
   }));
 
   teams = teams.map(team => {
@@ -87,7 +129,7 @@ export function getInitialTeamsInfo() {
       total_score: 0,
       total_penalty: 0,
       total_solved: 0,
-      components: {},
+      // last_update: 0,
       ...team
     }
   });
@@ -177,15 +219,19 @@ export function getInitialTeamsInfo() {
       const { pending_queue } = problem;
       let q = [...pending_queue];
       q[q.length - 1].isImportant = true;
+      q[q.length - 1].isFinal = true; // ?
+      const isFinal = q.length === 1;
       return {
         ...problem,
         pending_queue: q,
+        isFinal,
       };
     });
 
     return {
       ...team,
       problem_info,
+      isFinal: problem_info.every(problem => problem.isFinal),
     }
   });
 

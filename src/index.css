@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* table {border: none;} */
+
 /* code { */
 /*   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', */
 /*     monospace; */
@@ -36,10 +39,6 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
-}
-
-table {
-    width: 100%;
 }
 
 /* .solved-0 .solved-count { background-color: #4f0305; } */
