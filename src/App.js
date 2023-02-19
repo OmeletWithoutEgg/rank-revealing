@@ -2,13 +2,31 @@
 // import './App.css';
 
 import React, { useState, useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 import { FlippingCard } from './FlippingCard.js';
-
 import { useStyles } from './styles.js';
 import { getInitialTeamsInfo, reRank, updateWithSingleEvent } from './ranking.js';
+
 import contestInfo from './data/contest.json';
-import { motion } from 'framer-motion';
+
+// Partially polyfill findLastIndex for qutebrowser.
+// Although it seems that position: sticky and smooth
+// scrolling is not working in qutebrowser...
+if (!Array.prototype.findLastIndex) {
+  // eslint-disable-next-line
+  Array.prototype.findLastIndex = function(pred) {
+    if (typeof pred !== 'function') {
+      throw new TypeError('predicate must be a function');
+    }
+    for (let i = this.length - 1; i >= 0; i--) {
+      if (pred(this[i])) {
+        return i;
+      }
+    }
+    return -1;
+  }
+}
 
 const rankStr = rank => {
   if (rank % 10 === 1 && rank % 100 !== 11) {
@@ -178,47 +196,35 @@ function RankingRow(props) {
   );
 }
 
-function getLast(revealStatus) {
-  for (let i = revealStatus.length - 1; i >= 0; i--) {
-    if (revealStatus[i] !== 'revealed') {
-      return i;
-    }
-  }
-  return -1;
-  // throw new Error('all revealed');
-}
+function updateLastRevealing(teams) {
+  const last = teams.findLastIndex(team => team.revealStatus !== 'revealed');
+  return teams.map((team, i) => {
+    const revealStatus =
+      i > last ? 'revealed' :
+      i === last ? 'revealing' : 'notYetChecked';
+    return {
+      ...team,
+      revealStatus,
+    };
+  });
+};
 
 function Ranking() {
   const classes = useStyles();
-  const [teams, setTeams] = useState(() => {
-    const initTeam = reRank(getInitialTeamsInfo());
-    initTeam[initTeam.length - 1].revealStatus = 'revealing';
-    return initTeam;
-  });
+  const [teams, setTeams] = useState(() => 
+    updateLastRevealing(reRank(getInitialTeamsInfo()))
+  );
 
   // const N = teams.length;
   const classNames = [classes.root, classes.stickyHead];
 
-  const setLastRevealing = t => {
-    const last = getLast(t.map(team => team.revealStatus));
-    return t.map((team, i) => {
-      const revealStatus =
-        i > last ? 'revealed' :
-        i === last ? 'revealing' : 'notYetChecked';
-      return {
-        ...team,
-        revealStatus,
-      };
-    });
-  }
-
   const onClimbComplete = () => {
-    setTeams(setLastRevealing);
+    setTeams(updateLastRevealing);
   };
 
   const onNoClimb = () => {
     setTeams(oldTeams => {
-      let t = oldTeams.map(team => {
+      const t = oldTeams.map(team => {
         let { revealStatus } = team;
         if (revealStatus === 'revealing')
           revealStatus = 'revealed';
@@ -227,7 +233,7 @@ function Ranking() {
           revealStatus,
         };
       });
-      return setLastRevealing(t);
+      return updateLastRevealing(t);
     });
   };
 
@@ -257,7 +263,6 @@ function Ranking() {
       </thead>
       <tbody>
         {
-          // ioic_65 有兩段式分數成長
           teams.map((team, i) => (
             <RankingRow
               key={team.id}
@@ -275,20 +280,9 @@ function Ranking() {
 
 
 function App() {
-  // const items = Array(90).fill(0).map((_, i) => ({ id: i, text: i + 1 }));
   return (
     <div className="App">
       <Ranking />
-      {/* <List items={items} /> */}
-      {/* <FlippingCard> */}
-      {/*   { */}
-      {/*     items.map(el => { */}
-      {/*       return <FlippingCardFace key={el.id}> */}
-      {/*         <div>nothing{el.id} {el.id*el.id}</div> */}
-      {/*       </FlippingCardFace> */}
-      {/*     }) */}
-      {/*   } */}
-      {/* </FlippingCard> */}
     </div>
   )
 }

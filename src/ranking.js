@@ -63,7 +63,7 @@ export function updateWithSingleEvent(orgTeams, event) {
         penalty,
         penalty_tries,
         result,
-        isFinal: isFinal || problem.isFinal,
+        isFinal,
       };
     });
 
