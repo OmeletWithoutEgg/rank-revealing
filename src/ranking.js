@@ -53,8 +53,8 @@ export function updateWithSingleEvent(orgTeams, event) {
   const newTeams = reRank(orgTeams.map(team => {
     if (team.id !== team_id)
       return team;
-    let { problem_info } = team;
-    problem_info = problem_info.map(problem => {
+    let { problem_details } = team;
+    problem_details = problem_details.map(problem => {
       if (problem.id !== problem_id)
         return problem;
       return {
@@ -69,8 +69,8 @@ export function updateWithSingleEvent(orgTeams, event) {
 
     return {
       ...team,
-      problem_info,
-      isFinal: problem_info.every(problem => problem.isFinal),
+      problem_details,
+      isFinal: problem_details.every(problem => problem.isFinal),
     }
   }));
 
@@ -79,10 +79,10 @@ export function updateWithSingleEvent(orgTeams, event) {
 
 export function reRank(teams) {
   teams = teams.map(team => {
-    const { problem_info } = team;
-    const total_score   = sum(problem_info.map(problem => problem.score));
-    const total_penalty = sum(problem_info.map(problem => problem.penalty));
-    const total_solved  = sum(problem_info.map(problem => problem.result === 'Yes' ? 1 : 0));
+    const { problem_details } = team;
+    const total_score   = sum(problem_details.map(problem => problem.score));
+    const total_penalty = sum(problem_details.map(problem => problem.penalty));
+    const total_solved  = sum(problem_details.map(problem => problem.result === 'Yes' ? 1 : 0));
 
     return {
       ...team,
@@ -125,7 +125,7 @@ export function getInitialTeamsInfo() {
 
   teams = teams.map(team => {
     return {
-      problem_info: initialProblemInfo,
+      problem_details: initialProblemInfo,
       total_score: 0,
       total_penalty: 0,
       total_solved: 0,
@@ -143,9 +143,9 @@ export function getInitialTeamsInfo() {
     }
     teams = teams.map(team => {
       if (team.id !== run.team) return team;
-      let { problem_info } = team;
+      let { problem_details } = team;
 
-      problem_info = problem_info.map(problem => {
+      problem_details = problem_details.map(problem => {
         if (problem.id !== run.problem)
           return problem;
         return updateProblemWithSingleRun(team, problem, run);
@@ -154,7 +154,7 @@ export function getInitialTeamsInfo() {
       return {
         id: team.id,
         name: team.name,
-        problem_info,
+        problem_details,
       };
     });
   }
@@ -163,8 +163,8 @@ export function getInitialTeamsInfo() {
   //// process the runs after freeze
 
   teams = teams.map(team => {
-    let { problem_info } = team;
-    problem_info = problem_info.map(problem => {
+    let { problem_details } = team;
+    problem_details = problem_details.map(problem => {
       const {
         score,
         penalty,
@@ -174,7 +174,7 @@ export function getInitialTeamsInfo() {
 
       return {
         ...problem,
-        pending_queue: [{
+        hidden_results: [{
           score,
           penalty,
           penalty_tries,
@@ -186,52 +186,52 @@ export function getInitialTeamsInfo() {
 
     return {
       ...team,
-      problem_info,
+      problem_details,
     }
   });
 
   for (let run of freezed_run) {
     teams = teams.map(team => {
       if (team.id !== run.team) return team;
-      let { problem_info } = team;
-      problem_info = problem_info.map(problem => {
+      let { problem_details } = team;
+      problem_details = problem_details.map(problem => {
         if (problem.id !== run.problem)
           return problem;
-        let { pending_queue } = problem;
-        const p = pending_queue[pending_queue.length - 1];
-        pending_queue.push(updateProblemWithSingleRun(team, p, run));
+        let { hidden_results } = problem;
+        const p = hidden_results[hidden_results.length - 1];
+        hidden_results.push(updateProblemWithSingleRun(team, p, run));
         return {
           ...problem,
-          pending_queue
+          hidden_results
         };
       });
 
       return {
         ...team,
-        problem_info,
+        problem_details,
       };
     });
   }
 
   teams = teams.map(team => {
-    let { problem_info } = team;
-    problem_info = problem_info.map(problem => {
-      const { pending_queue } = problem;
-      let q = [...pending_queue];
+    let { problem_details } = team;
+    problem_details = problem_details.map(problem => {
+      const { hidden_results } = problem;
+      let q = [...hidden_results];
       q[q.length - 1].isImportant = true;
       q[q.length - 1].isFinal = true; // ?
       const isFinal = q.length === 1;
       return {
         ...problem,
-        pending_queue: q,
+        hidden_results: q,
         isFinal,
       };
     });
 
     return {
       ...team,
-      problem_info,
-      isFinal: problem_info.every(problem => problem.isFinal),
+      problem_details,
+      isFinal: problem_details.every(problem => problem.isFinal),
     }
   });
 

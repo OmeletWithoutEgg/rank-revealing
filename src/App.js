@@ -42,8 +42,8 @@ const rankStr = rank => {
 
 function RankingProblemCard({ problem, onRevealed, isActive }) {
   const classes = useStyles();
-  const M = problem.pending_queue.length;
-  const faces = problem.pending_queue.map((p, i) => {
+  const M = problem.hidden_results.length;
+  const faces = problem.hidden_results.map((p, i) => {
     return {
       ...p,
       pending_tries: M - i - 1,
@@ -146,7 +146,7 @@ function RankingRow(props) {
   }, [team.revealStatus, team.isFinal, onNoClimb]);
 
   const revealingProblem =
-    team.problem_info.find(problem => problem.isFinal === false);
+    team.problem_details.find(problem => problem.isFinal === false);
 
   return (
     <motion.tr
@@ -159,7 +159,7 @@ function RankingRow(props) {
       <td className={classes.teamRank}>{rankStr(team.rank)}</td>
       <td className={classes.teamName}>{team.name}</td>
       {
-        team.problem_info.map((problem, i) =>  {
+        team.problem_details.map((problem, i) =>  {
           const onSingleRevealed = updatedProblem => {
             const event = {
               ...updatedProblem,
