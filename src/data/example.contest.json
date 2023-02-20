@@ -1,0 +1,343 @@
+{
+  "title": "IOICamp 2023 Day 2: Double Trouble",
+  "problems": [
+    {
+      "id": 201,
+      "name": "A",
+      "color": "blue",
+      "title": "獨一無二的區間和(ㄏㄢˋ)"
+    },
+    {
+      "id": 202,
+      "name": "B",
+      "color": "blue",
+      "title": "Double 線段樹"
+    },
+    {
+      "id": 203,
+      "name": "C",
+      "color": "deeppink",
+      "title": "DE字串"
+    },
+    {
+      "id": 204,
+      "name": "D",
+      "color": "yellow",
+      "title": "迷宮設置"
+    },
+    {
+      "id": 205,
+      "name": "E",
+      "color": "red",
+      "title": "出題人不會出題是否搞錯了什麼"
+    },
+    {
+      "id": 206,
+      "name": "F",
+      "color": "blue",
+      "title": "THE EARTH"
+    },
+    {
+      "id": 207,
+      "name": "G",
+      "color": "deeppink",
+      "title": "NewWorld Online"
+    },
+    {
+      "id": 208,
+      "name": "H",
+      "color": "skyblue",
+      "title": "區間加值、區間求和"
+    }
+  ],
+  "teams": [
+    {
+      "id": 25,
+      "name": "ioic_01"
+    },
+    {
+      "id": 26,
+      "name": "ioic_02"
+    },
+    {
+      "id": 27,
+      "name": "ioic_03"
+    },
+    {
+      "id": 28,
+      "name": "ioic_04"
+    },
+    {
+      "id": 29,
+      "name": "ioic_05"
+    },
+    {
+      "id": 30,
+      "name": "ioic_06"
+    },
+    {
+      "id": 31,
+      "name": "ioic_07"
+    },
+    {
+      "id": 32,
+      "name": "ioic_08"
+    },
+    {
+      "id": 33,
+      "name": "ioic_09"
+    },
+    {
+      "id": 34,
+      "name": "ioic_10"
+    },
+    {
+      "id": 35,
+      "name": "ioic_11"
+    },
+    {
+      "id": 36,
+      "name": "ioic_12"
+    },
+    {
+      "id": 37,
+      "name": "ioic_13"
+    },
+    {
+      "id": 38,
+      "name": "ioic_14"
+    },
+    {
+      "id": 39,
+      "name": "ioic_15"
+    },
+    {
+      "id": 40,
+      "name": "ioic_16"
+    },
+    {
+      "id": 41,
+      "name": "ioic_17"
+    },
+    {
+      "id": 42,
+      "name": "ioic_18"
+    },
+    {
+      "id": 43,
+      "name": "ioic_19"
+    },
+    {
+      "id": 44,
+      "name": "ioic_20"
+    },
+    {
+      "id": 45,
+      "name": "ioic_21"
+    },
+    {
+      "id": 46,
+      "name": "ioic_22"
+    },
+    {
+      "id": 47,
+      "name": "ioic_23"
+    },
+    {
+      "id": 48,
+      "name": "ioic_24"
+    },
+    {
+      "id": 49,
+      "name": "ioic_25"
+    },
+    {
+      "id": 50,
+      "name": "ioic_26"
+    },
+    {
+      "id": 51,
+      "name": "ioic_27"
+    },
+    {
+      "id": 52,
+      "name": "ioic_28"
+    },
+    {
+      "id": 53,
+      "name": "ioic_29"
+    },
+    {
+      "id": 54,
+      "name": "ioic_30"
+    },
+    {
+      "id": 55,
+      "name": "ioic_31"
+    },
+    {
+      "id": 56,
+      "name": "ioic_32"
+    },
+    {
+      "id": 57,
+      "name": "ioic_33"
+    },
+    {
+      "id": 58,
+      "name": "ioic_34"
+    },
+    {
+      "id": 59,
+      "name": "ioic_35"
+    },
+    {
+      "id": 60,
+      "name": "ioic_36"
+    },
+    {
+      "id": 61,
+      "name": "ioic_37"
+    },
+    {
+      "id": 62,
+      "name": "ioic_38"
+    },
+    {
+      "id": 63,
+      "name": "ioic_39"
+    },
+    {
+      "id": 64,
+      "name": "ioic_40"
+    },
+    {
+      "id": 65,
+      "name": "ioic_41"
+    },
+    {
+      "id": 66,
+      "name": "ioic_42"
+    },
+    {
+      "id": 67,
+      "name": "ioic_43"
+    },
+    {
+      "id": 68,
+      "name": "ioic_44"
+    },
+    {
+      "id": 69,
+      "name": "ioic_45"
+    },
+    {
+      "id": 70,
+      "name": "ioic_46"
+    },
+    {
+      "id": 71,
+      "name": "ioic_47"
+    },
+    {
+      "id": 72,
+      "name": "ioic_48"
+    },
+    {
+      "id": 73,
+      "name": "ioic_49"
+    },
+    {
+      "id": 74,
+      "name": "ioic_50"
+    },
+    {
+      "id": 75,
+      "name": "ioic_51"
+    },
+    {
+      "id": 76,
+      "name": "ioic_52"
+    },
+    {
+      "id": 77,
+      "name": "ioic_53"
+    },
+    {
+      "id": 78,
+      "name": "ioic_54"
+    },
+    {
+      "id": 80,
+      "name": "ioic_56"
+    },
+    {
+      "id": 81,
+      "name": "ioic_57"
+    },
+    {
+      "id": 82,
+      "name": "ioic_58"
+    },
+    {
+      "id": 83,
+      "name": "ioic_59"
+    },
+    {
+      "id": 84,
+      "name": "ioic_60"
+    },
+    {
+      "id": 85,
+      "name": "ioic_61"
+    },
+    {
+      "id": 86,
+      "name": "ioic_62"
+    },
+    {
+      "id": 87,
+      "name": "ioic_63"
+    },
+    {
+      "id": 88,
+      "name": "ioic_64"
+    },
+    {
+      "id": 89,
+      "name": "ioic_65"
+    },
+    {
+      "id": 90,
+      "name": "ioic_66"
+    },
+    {
+      "id": 91,
+      "name": "ioic_67"
+    },
+    {
+      "id": 92,
+      "name": "ioic_68"
+    },
+    {
+      "id": 93,
+      "name": "ioic_69"
+    },
+    {
+      "id": 94,
+      "name": "ioic_70"
+    },
+    {
+      "id": 95,
+      "name": "ioic_71"
+    },
+    {
+      "id": 96,
+      "name": "ioic_72"
+    },
+    {
+      "id": 100,
+      "name": "ioic_00"
+    }
+  ]
+}

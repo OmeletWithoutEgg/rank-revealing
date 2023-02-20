@@ -1,0 +1,5564 @@
+{
+  "runs": [
+    {
+      "id": 1,
+      "result": "Yes",
+      "problem": 206,
+      "team": 82,
+      "submissionTime": 1,
+      "score": "100.000000"
+    },
+    {
+      "id": 2,
+      "result": "Yes",
+      "problem": 206,
+      "team": 40,
+      "submissionTime": 2,
+      "score": "100.000000"
+    },
+    {
+      "id": 3,
+      "result": "Yes",
+      "problem": 206,
+      "team": 100,
+      "submissionTime": 2,
+      "score": "100.000000"
+    },
+    {
+      "id": 4,
+      "result": "Yes",
+      "problem": 206,
+      "team": 30,
+      "submissionTime": 2,
+      "score": "100.000000"
+    },
+    {
+      "id": 5,
+      "result": "No",
+      "problem": 206,
+      "team": 48,
+      "submissionTime": 3,
+      "score": "0.000000"
+    },
+    {
+      "id": 6,
+      "result": "Yes",
+      "problem": 206,
+      "team": 96,
+      "submissionTime": 3,
+      "score": "100.000000"
+    },
+    {
+      "id": 8,
+      "result": "Yes",
+      "problem": 206,
+      "team": 65,
+      "submissionTime": 3,
+      "score": "100.000000"
+    },
+    {
+      "id": 9,
+      "result": "No",
+      "problem": 207,
+      "team": 88,
+      "submissionTime": 3,
+      "score": "0.000000"
+    },
+    {
+      "id": 11,
+      "result": "No",
+      "problem": 201,
+      "team": 49,
+      "submissionTime": 4,
+      "score": "0.000000"
+    },
+    {
+      "id": 12,
+      "result": "Yes",
+      "problem": 206,
+      "team": 90,
+      "submissionTime": 4,
+      "score": "100.000000"
+    },
+    {
+      "id": 13,
+      "result": "Yes",
+      "problem": 206,
+      "team": 33,
+      "submissionTime": 5,
+      "score": "100.000000"
+    },
+    {
+      "id": 14,
+      "result": "Yes",
+      "problem": 206,
+      "team": 88,
+      "submissionTime": 5,
+      "score": "100.000000"
+    },
+    {
+      "id": 15,
+      "result": "Yes",
+      "problem": 206,
+      "team": 78,
+      "submissionTime": 5,
+      "score": "100.000000"
+    },
+    {
+      "id": 16,
+      "result": "Yes",
+      "problem": 206,
+      "team": 66,
+      "submissionTime": 5,
+      "score": "100.000000"
+    },
+    {
+      "id": 17,
+      "result": "Yes",
+      "problem": 206,
+      "team": 72,
+      "submissionTime": 5,
+      "score": "100.000000"
+    },
+    {
+      "id": 18,
+      "result": "No",
+      "problem": 206,
+      "team": 48,
+      "submissionTime": 5,
+      "score": "0.000000"
+    },
+    {
+      "id": 19,
+      "result": "Yes",
+      "problem": 206,
+      "team": 45,
+      "submissionTime": 5,
+      "score": "100.000000"
+    },
+    {
+      "id": 20,
+      "result": "Yes",
+      "problem": 206,
+      "team": 69,
+      "submissionTime": 6,
+      "score": "100.000000"
+    },
+    {
+      "id": 21,
+      "result": "Yes",
+      "problem": 206,
+      "team": 73,
+      "submissionTime": 6,
+      "score": "100.000000"
+    },
+    {
+      "id": 22,
+      "result": "No",
+      "problem": 206,
+      "team": 83,
+      "submissionTime": 6,
+      "score": "0.000000"
+    },
+    {
+      "id": 23,
+      "result": "Yes",
+      "problem": 208,
+      "team": 47,
+      "submissionTime": 6,
+      "score": "100.000000"
+    },
+    {
+      "id": 24,
+      "result": "Yes",
+      "problem": 208,
+      "team": 53,
+      "submissionTime": 7,
+      "score": "100.000000"
+    },
+    {
+      "id": 25,
+      "result": "Yes",
+      "problem": 208,
+      "team": 38,
+      "submissionTime": 7,
+      "score": "100.000000"
+    },
+    {
+      "id": 26,
+      "result": "Yes",
+      "problem": 208,
+      "team": 61,
+      "submissionTime": 7,
+      "score": "100.000000"
+    },
+    {
+      "id": 27,
+      "result": "Yes",
+      "problem": 206,
+      "team": 31,
+      "submissionTime": 7,
+      "score": "100.000000"
+    },
+    {
+      "id": 28,
+      "result": "No",
+      "problem": 208,
+      "team": 64,
+      "submissionTime": 7,
+      "score": "0.000000"
+    },
+    {
+      "id": 30,
+      "result": "Yes",
+      "problem": 206,
+      "team": 85,
+      "submissionTime": 8,
+      "score": "100.000000"
+    },
+    {
+      "id": 31,
+      "result": "Yes",
+      "problem": 208,
+      "team": 86,
+      "submissionTime": 8,
+      "score": "100.000000"
+    },
+    {
+      "id": 32,
+      "result": "No",
+      "problem": 208,
+      "team": 68,
+      "submissionTime": 8,
+      "score": "50.000000"
+    },
+    {
+      "id": 33,
+      "result": "Yes",
+      "problem": 206,
+      "team": 58,
+      "submissionTime": 8,
+      "score": "100.000000"
+    },
+    {
+      "id": 34,
+      "result": "No",
+      "problem": 206,
+      "team": 87,
+      "submissionTime": 8,
+      "score": "0.000000"
+    },
+    {
+      "id": 35,
+      "result": "Yes",
+      "problem": 206,
+      "team": 48,
+      "submissionTime": 9,
+      "score": "100.000000"
+    },
+    {
+      "id": 36,
+      "result": "Yes",
+      "problem": 206,
+      "team": 91,
+      "submissionTime": 9,
+      "score": "100.000000"
+    },
+    {
+      "id": 37,
+      "result": "Yes",
+      "problem": 206,
+      "team": 76,
+      "submissionTime": 9,
+      "score": "100.000000"
+    },
+    {
+      "id": 38,
+      "result": "Yes",
+      "problem": 206,
+      "team": 70,
+      "submissionTime": 9,
+      "score": "100.000000"
+    },
+    {
+      "id": 39,
+      "result": "Yes",
+      "problem": 206,
+      "team": 61,
+      "submissionTime": 9,
+      "score": "100.000000"
+    },
+    {
+      "id": 40,
+      "result": "Yes",
+      "problem": 206,
+      "team": 77,
+      "submissionTime": 9,
+      "score": "100.000000"
+    },
+    {
+      "id": 41,
+      "result": "No",
+      "problem": 201,
+      "team": 49,
+      "submissionTime": 9,
+      "score": "0.000000"
+    },
+    {
+      "id": 42,
+      "result": "Yes",
+      "problem": 206,
+      "team": 86,
+      "submissionTime": 10,
+      "score": "100.000000"
+    },
+    {
+      "id": 43,
+      "result": "Yes",
+      "problem": 208,
+      "team": 68,
+      "submissionTime": 11,
+      "score": "100.000000"
+    },
+    {
+      "id": 44,
+      "result": "Yes",
+      "problem": 206,
+      "team": 38,
+      "submissionTime": 11,
+      "score": "100.000000"
+    },
+    {
+      "id": 45,
+      "result": "Yes",
+      "problem": 206,
+      "team": 43,
+      "submissionTime": 11,
+      "score": "100.000000"
+    },
+    {
+      "id": 46,
+      "result": "Yes",
+      "problem": 201,
+      "team": 95,
+      "submissionTime": 11,
+      "score": "100.000000"
+    },
+    {
+      "id": 47,
+      "result": "No",
+      "problem": 208,
+      "team": 34,
+      "submissionTime": 11,
+      "score": "0.000000"
+    },
+    {
+      "id": 48,
+      "result": "Yes",
+      "problem": 208,
+      "team": 62,
+      "submissionTime": 11,
+      "score": "100.000000"
+    },
+    {
+      "id": 49,
+      "result": "Yes",
+      "problem": 206,
+      "team": 55,
+      "submissionTime": 11,
+      "score": "100.000000"
+    },
+    {
+      "id": 50,
+      "result": "Yes",
+      "problem": 206,
+      "team": 53,
+      "submissionTime": 12,
+      "score": "100.000000"
+    },
+    {
+      "id": 51,
+      "result": "Yes",
+      "problem": 206,
+      "team": 50,
+      "submissionTime": 12,
+      "score": "100.000000"
+    },
+    {
+      "id": 52,
+      "result": "Yes",
+      "problem": 208,
+      "team": 84,
+      "submissionTime": 12,
+      "score": "100.000000"
+    },
+    {
+      "id": 53,
+      "result": "Yes",
+      "problem": 206,
+      "team": 68,
+      "submissionTime": 12,
+      "score": "100.000000"
+    },
+    {
+      "id": 54,
+      "result": "Yes",
+      "problem": 206,
+      "team": 37,
+      "submissionTime": 12,
+      "score": "100.000000"
+    },
+    {
+      "id": 55,
+      "result": "No",
+      "problem": 208,
+      "team": 82,
+      "submissionTime": 12,
+      "score": "50.000000"
+    },
+    {
+      "id": 56,
+      "result": "Yes",
+      "problem": 206,
+      "team": 41,
+      "submissionTime": 13,
+      "score": "100.000000"
+    },
+    {
+      "id": 57,
+      "result": "Yes",
+      "problem": 206,
+      "team": 27,
+      "submissionTime": 13,
+      "score": "100.000000"
+    },
+    {
+      "id": 58,
+      "result": "Yes",
+      "problem": 208,
+      "team": 39,
+      "submissionTime": 13,
+      "score": "100.000000"
+    },
+    {
+      "id": 59,
+      "result": "Yes",
+      "problem": 208,
+      "team": 90,
+      "submissionTime": 13,
+      "score": "100.000000"
+    },
+    {
+      "id": 60,
+      "result": "Yes",
+      "problem": 206,
+      "team": 64,
+      "submissionTime": 13,
+      "score": "100.000000"
+    },
+    {
+      "id": 61,
+      "result": "Yes",
+      "problem": 208,
+      "team": 82,
+      "submissionTime": 14,
+      "score": "100.000000"
+    },
+    {
+      "id": 62,
+      "result": "Yes",
+      "problem": 206,
+      "team": 95,
+      "submissionTime": 14,
+      "score": "100.000000"
+    },
+    {
+      "id": 63,
+      "result": "Yes",
+      "problem": 208,
+      "team": 33,
+      "submissionTime": 14,
+      "score": "100.000000"
+    },
+    {
+      "id": 64,
+      "result": "Yes",
+      "problem": 208,
+      "team": 69,
+      "submissionTime": 14,
+      "score": "100.000000"
+    },
+    {
+      "id": 65,
+      "result": "No",
+      "problem": 208,
+      "team": 65,
+      "submissionTime": 14,
+      "score": "0.000000"
+    },
+    {
+      "id": 66,
+      "result": "Yes",
+      "problem": 208,
+      "team": 40,
+      "submissionTime": 14,
+      "score": "100.000000"
+    },
+    {
+      "id": 67,
+      "result": "Yes",
+      "problem": 206,
+      "team": 47,
+      "submissionTime": 14,
+      "score": "100.000000"
+    },
+    {
+      "id": 68,
+      "result": "Yes",
+      "problem": 208,
+      "team": 52,
+      "submissionTime": 15,
+      "score": "100.000000"
+    },
+    {
+      "id": 69,
+      "result": "Yes",
+      "problem": 208,
+      "team": 37,
+      "submissionTime": 15,
+      "score": "100.000000"
+    },
+    {
+      "id": 70,
+      "result": "No",
+      "problem": 206,
+      "team": 56,
+      "submissionTime": 15,
+      "score": "0.000000"
+    },
+    {
+      "id": 71,
+      "result": "No",
+      "problem": 206,
+      "team": 46,
+      "submissionTime": 15,
+      "score": "0.000000"
+    },
+    {
+      "id": 72,
+      "result": "No",
+      "problem": 201,
+      "team": 66,
+      "submissionTime": 16,
+      "score": "0.000000"
+    },
+    {
+      "id": 73,
+      "result": "Yes",
+      "problem": 206,
+      "team": 62,
+      "submissionTime": 16,
+      "score": "100.000000"
+    },
+    {
+      "id": 74,
+      "result": "Yes",
+      "problem": 201,
+      "team": 66,
+      "submissionTime": 16,
+      "score": "100.000000"
+    },
+    {
+      "id": 75,
+      "result": "Yes",
+      "problem": 207,
+      "team": 61,
+      "submissionTime": 16,
+      "score": "100.000000"
+    },
+    {
+      "id": 76,
+      "result": "Yes",
+      "problem": 208,
+      "team": 67,
+      "submissionTime": 16,
+      "score": "100.000000"
+    },
+    {
+      "id": 77,
+      "result": "No",
+      "problem": 208,
+      "team": 25,
+      "submissionTime": 17,
+      "score": "0.000000"
+    },
+    {
+      "id": 78,
+      "result": "Yes",
+      "problem": 208,
+      "team": 78,
+      "submissionTime": 17,
+      "score": "100.000000"
+    },
+    {
+      "id": 79,
+      "result": "No",
+      "problem": 201,
+      "team": 33,
+      "submissionTime": 17,
+      "score": "0.000000"
+    },
+    {
+      "id": 80,
+      "result": "Yes",
+      "problem": 208,
+      "team": 31,
+      "submissionTime": 17,
+      "score": "100.000000"
+    },
+    {
+      "id": 81,
+      "result": "No",
+      "problem": 206,
+      "team": 46,
+      "submissionTime": 17,
+      "score": "0.000000"
+    },
+    {
+      "id": 82,
+      "result": "Yes",
+      "problem": 208,
+      "team": 76,
+      "submissionTime": 17,
+      "score": "100.000000"
+    },
+    {
+      "id": 83,
+      "result": "No",
+      "problem": 201,
+      "team": 68,
+      "submissionTime": 17,
+      "score": "0.000000"
+    },
+    {
+      "id": 84,
+      "result": "No",
+      "problem": 206,
+      "team": 56,
+      "submissionTime": 17,
+      "score": "0.000000"
+    },
+    {
+      "id": 85,
+      "result": "No",
+      "problem": 205,
+      "team": 28,
+      "submissionTime": 17,
+      "score": "0.000000"
+    },
+    {
+      "id": 86,
+      "result": "Yes",
+      "problem": 201,
+      "team": 33,
+      "submissionTime": 18,
+      "score": "100.000000"
+    },
+    {
+      "id": 87,
+      "result": "Yes",
+      "problem": 208,
+      "team": 88,
+      "submissionTime": 18,
+      "score": "100.000000"
+    },
+    {
+      "id": 88,
+      "result": "Yes",
+      "problem": 206,
+      "team": 93,
+      "submissionTime": 18,
+      "score": "100.000000"
+    },
+    {
+      "id": 89,
+      "result": "No",
+      "problem": 206,
+      "team": 34,
+      "submissionTime": 18,
+      "score": "0.000000"
+    },
+    {
+      "id": 90,
+      "result": "Yes",
+      "problem": 206,
+      "team": 34,
+      "submissionTime": 18,
+      "score": "100.000000"
+    },
+    {
+      "id": 91,
+      "result": "Yes",
+      "problem": 208,
+      "team": 81,
+      "submissionTime": 18,
+      "score": "100.000000"
+    },
+    {
+      "id": 92,
+      "result": "No",
+      "problem": 201,
+      "team": 38,
+      "submissionTime": 19,
+      "score": "0.000000"
+    },
+    {
+      "id": 93,
+      "result": "Yes",
+      "problem": 206,
+      "team": 29,
+      "submissionTime": 19,
+      "score": "100.000000"
+    },
+    {
+      "id": 94,
+      "result": "No",
+      "problem": 205,
+      "team": 28,
+      "submissionTime": 19,
+      "score": "20.000000"
+    },
+    {
+      "id": 95,
+      "result": "Yes",
+      "problem": 208,
+      "team": 95,
+      "submissionTime": 19,
+      "score": "100.000000"
+    },
+    {
+      "id": 96,
+      "result": "Yes",
+      "problem": 208,
+      "team": 96,
+      "submissionTime": 19,
+      "score": "100.000000"
+    },
+    {
+      "id": 97,
+      "result": "No",
+      "problem": 201,
+      "team": 78,
+      "submissionTime": 19,
+      "score": "0.000000"
+    },
+    {
+      "id": 98,
+      "result": "Yes",
+      "problem": 208,
+      "team": 64,
+      "submissionTime": 19,
+      "score": "100.000000"
+    },
+    {
+      "id": 99,
+      "result": "No",
+      "problem": 201,
+      "team": 38,
+      "submissionTime": 19,
+      "score": "0.000000"
+    },
+    {
+      "id": 100,
+      "result": "Yes",
+      "problem": 206,
+      "team": 39,
+      "submissionTime": 20,
+      "score": "100.000000"
+    },
+    {
+      "id": 101,
+      "result": "Yes",
+      "problem": 206,
+      "team": 81,
+      "submissionTime": 20,
+      "score": "100.000000"
+    },
+    {
+      "id": 102,
+      "result": "Yes",
+      "problem": 206,
+      "team": 67,
+      "submissionTime": 20,
+      "score": "100.000000"
+    },
+    {
+      "id": 103,
+      "result": "Yes",
+      "problem": 208,
+      "team": 91,
+      "submissionTime": 21,
+      "score": "100.000000"
+    },
+    {
+      "id": 104,
+      "result": "No",
+      "problem": 208,
+      "team": 48,
+      "submissionTime": 21,
+      "score": "50.000000"
+    },
+    {
+      "id": 105,
+      "result": "Yes",
+      "problem": 206,
+      "team": 32,
+      "submissionTime": 21,
+      "score": "100.000000"
+    },
+    {
+      "id": 106,
+      "result": "Yes",
+      "problem": 208,
+      "team": 72,
+      "submissionTime": 21,
+      "score": "100.000000"
+    },
+    {
+      "id": 107,
+      "result": "No",
+      "problem": 208,
+      "team": 71,
+      "submissionTime": 21,
+      "score": "0.000000"
+    },
+    {
+      "id": 108,
+      "result": "Yes",
+      "problem": 206,
+      "team": 74,
+      "submissionTime": 21,
+      "score": "100.000000"
+    },
+    {
+      "id": 109,
+      "result": "No",
+      "problem": 208,
+      "team": 25,
+      "submissionTime": 21,
+      "score": "0.000000"
+    },
+    {
+      "id": 110,
+      "result": "No",
+      "problem": 208,
+      "team": 71,
+      "submissionTime": 22,
+      "score": "0.000000"
+    },
+    {
+      "id": 111,
+      "result": "Yes",
+      "problem": 208,
+      "team": 60,
+      "submissionTime": 22,
+      "score": "100.000000"
+    },
+    {
+      "id": 112,
+      "result": "Yes",
+      "problem": 208,
+      "team": 25,
+      "submissionTime": 22,
+      "score": "100.000000"
+    },
+    {
+      "id": 113,
+      "result": "No",
+      "problem": 201,
+      "team": 57,
+      "submissionTime": 22,
+      "score": "0.000000"
+    },
+    {
+      "id": 115,
+      "result": "Yes",
+      "problem": 208,
+      "team": 58,
+      "submissionTime": 22,
+      "score": "100.000000"
+    },
+    {
+      "id": 116,
+      "result": "No",
+      "problem": 206,
+      "team": 57,
+      "submissionTime": 23,
+      "score": "0.000000"
+    },
+    {
+      "id": 117,
+      "result": "Yes",
+      "problem": 208,
+      "team": 100,
+      "submissionTime": 23,
+      "score": "100.000000"
+    },
+    {
+      "id": 118,
+      "result": "Yes",
+      "problem": 208,
+      "team": 65,
+      "submissionTime": 23,
+      "score": "100.000000"
+    },
+    {
+      "id": 120,
+      "result": "Yes",
+      "problem": 206,
+      "team": 57,
+      "submissionTime": 23,
+      "score": "100.000000"
+    },
+    {
+      "id": 121,
+      "result": "Yes",
+      "problem": 206,
+      "team": 49,
+      "submissionTime": 24,
+      "score": "100.000000"
+    },
+    {
+      "id": 122,
+      "result": "Yes",
+      "problem": 208,
+      "team": 48,
+      "submissionTime": 24,
+      "score": "100.000000"
+    },
+    {
+      "id": 123,
+      "result": "No",
+      "problem": 207,
+      "team": 45,
+      "submissionTime": 24,
+      "score": "0.000000"
+    },
+    {
+      "id": 124,
+      "result": "Yes",
+      "problem": 206,
+      "team": 63,
+      "submissionTime": 25,
+      "score": "100.000000"
+    },
+    {
+      "id": 125,
+      "result": "Yes",
+      "problem": 206,
+      "team": 52,
+      "submissionTime": 25,
+      "score": "100.000000"
+    },
+    {
+      "id": 126,
+      "result": "Yes",
+      "problem": 201,
+      "team": 78,
+      "submissionTime": 25,
+      "score": "100.000000"
+    },
+    {
+      "id": 127,
+      "result": "No",
+      "problem": 208,
+      "team": 71,
+      "submissionTime": 25,
+      "score": "0.000000"
+    },
+    {
+      "id": 128,
+      "result": "No",
+      "problem": 207,
+      "team": 33,
+      "submissionTime": 25,
+      "score": "0.000000"
+    },
+    {
+      "id": 129,
+      "result": "Yes",
+      "problem": 201,
+      "team": 100,
+      "submissionTime": 25,
+      "score": "100.000000"
+    },
+    {
+      "id": 130,
+      "result": "Yes",
+      "problem": 206,
+      "team": 26,
+      "submissionTime": 25,
+      "score": "100.000000"
+    },
+    {
+      "id": 131,
+      "result": "No",
+      "problem": 201,
+      "team": 69,
+      "submissionTime": 26,
+      "score": "0.000000"
+    },
+    {
+      "id": 132,
+      "result": "Yes",
+      "problem": 208,
+      "team": 59,
+      "submissionTime": 26,
+      "score": "100.000000"
+    },
+    {
+      "id": 133,
+      "result": "Yes",
+      "problem": 208,
+      "team": 56,
+      "submissionTime": 27,
+      "score": "100.000000"
+    },
+    {
+      "id": 134,
+      "result": "No",
+      "problem": 201,
+      "team": 68,
+      "submissionTime": 27,
+      "score": "0.000000"
+    },
+    {
+      "id": 135,
+      "result": "Yes",
+      "problem": 208,
+      "team": 28,
+      "submissionTime": 28,
+      "score": "100.000000"
+    },
+    {
+      "id": 136,
+      "result": "Yes",
+      "problem": 201,
+      "team": 68,
+      "submissionTime": 28,
+      "score": "100.000000"
+    },
+    {
+      "id": 137,
+      "result": "Yes",
+      "problem": 208,
+      "team": 43,
+      "submissionTime": 28,
+      "score": "100.000000"
+    },
+    {
+      "id": 138,
+      "result": "Yes",
+      "problem": 207,
+      "team": 33,
+      "submissionTime": 28,
+      "score": "100.000000"
+    },
+    {
+      "id": 139,
+      "result": "Yes",
+      "problem": 207,
+      "team": 31,
+      "submissionTime": 28,
+      "score": "100.000000"
+    },
+    {
+      "id": 140,
+      "result": "No",
+      "problem": 201,
+      "team": 38,
+      "submissionTime": 29,
+      "score": "0.000000"
+    },
+    {
+      "id": 141,
+      "result": "Yes",
+      "problem": 206,
+      "team": 94,
+      "submissionTime": 29,
+      "score": "100.000000"
+    },
+    {
+      "id": 142,
+      "result": "Yes",
+      "problem": 201,
+      "team": 69,
+      "submissionTime": 29,
+      "score": "100.000000"
+    },
+    {
+      "id": 143,
+      "result": "No",
+      "problem": 201,
+      "team": 49,
+      "submissionTime": 29,
+      "score": "0.000000"
+    },
+    {
+      "id": 144,
+      "result": "Yes",
+      "problem": 201,
+      "team": 30,
+      "submissionTime": 29,
+      "score": "100.000000"
+    },
+    {
+      "id": 145,
+      "result": "Yes",
+      "problem": 206,
+      "team": 60,
+      "submissionTime": 30,
+      "score": "100.000000"
+    },
+    {
+      "id": 146,
+      "result": "Yes",
+      "problem": 206,
+      "team": 54,
+      "submissionTime": 30,
+      "score": "100.000000"
+    },
+    {
+      "id": 147,
+      "result": "Yes",
+      "problem": 208,
+      "team": 46,
+      "submissionTime": 30,
+      "score": "100.000000"
+    },
+    {
+      "id": 148,
+      "result": "Yes",
+      "problem": 208,
+      "team": 57,
+      "submissionTime": 30,
+      "score": "100.000000"
+    },
+    {
+      "id": 149,
+      "result": "No",
+      "problem": 206,
+      "team": 56,
+      "submissionTime": 31,
+      "score": "0.000000"
+    },
+    {
+      "id": 150,
+      "result": "No",
+      "problem": 201,
+      "team": 86,
+      "submissionTime": 31,
+      "score": "0.000000"
+    },
+    {
+      "id": 151,
+      "result": "No",
+      "problem": 201,
+      "team": 39,
+      "submissionTime": 31,
+      "score": "0.000000"
+    },
+    {
+      "id": 152,
+      "result": "Yes",
+      "problem": 208,
+      "team": 45,
+      "submissionTime": 31,
+      "score": "100.000000"
+    },
+    {
+      "id": 153,
+      "result": "Yes",
+      "problem": 208,
+      "team": 41,
+      "submissionTime": 31,
+      "score": "100.000000"
+    },
+    {
+      "id": 154,
+      "result": "Yes",
+      "problem": 206,
+      "team": 84,
+      "submissionTime": 31,
+      "score": "100.000000"
+    },
+    {
+      "id": 155,
+      "result": "Yes",
+      "problem": 201,
+      "team": 49,
+      "submissionTime": 32,
+      "score": "100.000000"
+    },
+    {
+      "id": 156,
+      "result": "No",
+      "problem": 201,
+      "team": 39,
+      "submissionTime": 32,
+      "score": "0.000000"
+    },
+    {
+      "id": 157,
+      "result": "No",
+      "problem": 207,
+      "team": 78,
+      "submissionTime": 32,
+      "score": "0.000000"
+    },
+    {
+      "id": 158,
+      "result": "No",
+      "problem": 202,
+      "team": 47,
+      "submissionTime": 32,
+      "score": "50.000000"
+    },
+    {
+      "id": 159,
+      "result": "No",
+      "problem": 201,
+      "team": 90,
+      "submissionTime": 32,
+      "score": "0.000000"
+    },
+    {
+      "id": 160,
+      "result": "No",
+      "problem": 207,
+      "team": 78,
+      "submissionTime": 33,
+      "score": "0.000000"
+    },
+    {
+      "id": 161,
+      "result": "Yes",
+      "problem": 207,
+      "team": 95,
+      "submissionTime": 33,
+      "score": "100.000000"
+    },
+    {
+      "id": 162,
+      "result": "Yes",
+      "problem": 208,
+      "team": 74,
+      "submissionTime": 33,
+      "score": "100.000000"
+    },
+    {
+      "id": 163,
+      "result": "No",
+      "problem": 206,
+      "team": 71,
+      "submissionTime": 34,
+      "score": "0.000000"
+    },
+    {
+      "id": 164,
+      "result": "No",
+      "problem": 201,
+      "team": 86,
+      "submissionTime": 34,
+      "score": "0.000000"
+    },
+    {
+      "id": 165,
+      "result": "No",
+      "problem": 207,
+      "team": 78,
+      "submissionTime": 35,
+      "score": "0.000000"
+    },
+    {
+      "id": 166,
+      "result": "Yes",
+      "problem": 208,
+      "team": 94,
+      "submissionTime": 35,
+      "score": "100.000000"
+    },
+    {
+      "id": 167,
+      "result": "Yes",
+      "problem": 201,
+      "team": 65,
+      "submissionTime": 35,
+      "score": "100.000000"
+    },
+    {
+      "id": 168,
+      "result": "No",
+      "problem": 208,
+      "team": 71,
+      "submissionTime": 35,
+      "score": "0.000000"
+    },
+    {
+      "id": 169,
+      "result": "Yes",
+      "problem": 206,
+      "team": 28,
+      "submissionTime": 35,
+      "score": "100.000000"
+    },
+    {
+      "id": 170,
+      "result": "Yes",
+      "problem": 201,
+      "team": 40,
+      "submissionTime": 36,
+      "score": "100.000000"
+    },
+    {
+      "id": 171,
+      "result": "No",
+      "problem": 207,
+      "team": 25,
+      "submissionTime": 36,
+      "score": "0.000000"
+    },
+    {
+      "id": 172,
+      "result": "Yes",
+      "problem": 207,
+      "team": 100,
+      "submissionTime": 36,
+      "score": "100.000000"
+    },
+    {
+      "id": 173,
+      "result": "No",
+      "problem": 201,
+      "team": 82,
+      "submissionTime": 36,
+      "score": "0.000000"
+    },
+    {
+      "id": 174,
+      "result": "No",
+      "problem": 201,
+      "team": 52,
+      "submissionTime": 36,
+      "score": "0.000000"
+    },
+    {
+      "id": 175,
+      "result": "Yes",
+      "problem": 206,
+      "team": 56,
+      "submissionTime": 37,
+      "score": "100.000000"
+    },
+    {
+      "id": 176,
+      "result": "Yes",
+      "problem": 206,
+      "team": 83,
+      "submissionTime": 37,
+      "score": "100.000000"
+    },
+    {
+      "id": 177,
+      "result": "Yes",
+      "problem": 206,
+      "team": 59,
+      "submissionTime": 38,
+      "score": "100.000000"
+    },
+    {
+      "id": 178,
+      "result": "Yes",
+      "problem": 207,
+      "team": 76,
+      "submissionTime": 38,
+      "score": "100.000000"
+    },
+    {
+      "id": 179,
+      "result": "Yes",
+      "problem": 201,
+      "team": 39,
+      "submissionTime": 39,
+      "score": "100.000000"
+    },
+    {
+      "id": 180,
+      "result": "Yes",
+      "problem": 207,
+      "team": 25,
+      "submissionTime": 39,
+      "score": "100.000000"
+    },
+    {
+      "id": 181,
+      "result": "No",
+      "problem": 208,
+      "team": 87,
+      "submissionTime": 39,
+      "score": "50.000000"
+    },
+    {
+      "id": 182,
+      "result": "Yes",
+      "problem": 201,
+      "team": 90,
+      "submissionTime": 39,
+      "score": "100.000000"
+    },
+    {
+      "id": 183,
+      "result": "Yes",
+      "problem": 208,
+      "team": 55,
+      "submissionTime": 40,
+      "score": "100.000000"
+    },
+    {
+      "id": 184,
+      "result": "Yes",
+      "problem": 208,
+      "team": 77,
+      "submissionTime": 40,
+      "score": "100.000000"
+    },
+    {
+      "id": 185,
+      "result": "Yes",
+      "problem": 206,
+      "team": 25,
+      "submissionTime": 40,
+      "score": "100.000000"
+    },
+    {
+      "id": 186,
+      "result": "Yes",
+      "problem": 201,
+      "team": 67,
+      "submissionTime": 41,
+      "score": "100.000000"
+    },
+    {
+      "id": 187,
+      "result": "Yes",
+      "problem": 201,
+      "team": 47,
+      "submissionTime": 41,
+      "score": "100.000000"
+    },
+    {
+      "id": 188,
+      "result": "Yes",
+      "problem": 208,
+      "team": 34,
+      "submissionTime": 42,
+      "score": "100.000000"
+    },
+    {
+      "id": 189,
+      "result": "No",
+      "problem": 201,
+      "team": 83,
+      "submissionTime": 43,
+      "score": "0.000000"
+    },
+    {
+      "id": 190,
+      "result": "Yes",
+      "problem": 207,
+      "team": 62,
+      "submissionTime": 43,
+      "score": "100.000000"
+    },
+    {
+      "id": 191,
+      "result": "Yes",
+      "problem": 208,
+      "team": 89,
+      "submissionTime": 43,
+      "score": "100.000000"
+    },
+    {
+      "id": 192,
+      "result": "Yes",
+      "problem": 201,
+      "team": 57,
+      "submissionTime": 43,
+      "score": "100.000000"
+    },
+    {
+      "id": 193,
+      "result": "Yes",
+      "problem": 201,
+      "team": 72,
+      "submissionTime": 43,
+      "score": "100.000000"
+    },
+    {
+      "id": 194,
+      "result": "Yes",
+      "problem": 208,
+      "team": 54,
+      "submissionTime": 43,
+      "score": "100.000000"
+    },
+    {
+      "id": 195,
+      "result": "Yes",
+      "problem": 201,
+      "team": 96,
+      "submissionTime": 43,
+      "score": "100.000000"
+    },
+    {
+      "id": 196,
+      "result": "No",
+      "problem": 207,
+      "team": 64,
+      "submissionTime": 43,
+      "score": "0.000000"
+    },
+    {
+      "id": 197,
+      "result": "No",
+      "problem": 208,
+      "team": 85,
+      "submissionTime": 43,
+      "score": "0.000000"
+    },
+    {
+      "id": 198,
+      "result": "Yes",
+      "problem": 207,
+      "team": 84,
+      "submissionTime": 43,
+      "score": "100.000000"
+    },
+    {
+      "id": 199,
+      "result": "Yes",
+      "problem": 201,
+      "team": 74,
+      "submissionTime": 44,
+      "score": "100.000000"
+    },
+    {
+      "id": 200,
+      "result": "No",
+      "problem": 201,
+      "team": 55,
+      "submissionTime": 44,
+      "score": "0.000000"
+    },
+    {
+      "id": 201,
+      "result": "No",
+      "problem": 201,
+      "team": 83,
+      "submissionTime": 45,
+      "score": "0.000000"
+    },
+    {
+      "id": 202,
+      "result": "No",
+      "problem": 201,
+      "team": 52,
+      "submissionTime": 45,
+      "score": "0.000000"
+    },
+    {
+      "id": 204,
+      "result": "No",
+      "problem": 207,
+      "team": 68,
+      "submissionTime": 45,
+      "score": "0.000000"
+    },
+    {
+      "id": 205,
+      "result": "Yes",
+      "problem": 201,
+      "team": 55,
+      "submissionTime": 46,
+      "score": "100.000000"
+    },
+    {
+      "id": 206,
+      "result": "Yes",
+      "problem": 208,
+      "team": 73,
+      "submissionTime": 46,
+      "score": "100.000000"
+    },
+    {
+      "id": 207,
+      "result": "Yes",
+      "problem": 201,
+      "team": 94,
+      "submissionTime": 46,
+      "score": "100.000000"
+    },
+    {
+      "id": 208,
+      "result": "No",
+      "problem": 201,
+      "team": 25,
+      "submissionTime": 46,
+      "score": "0.000000"
+    },
+    {
+      "id": 209,
+      "result": "Yes",
+      "problem": 208,
+      "team": 35,
+      "submissionTime": 46,
+      "score": "100.000000"
+    },
+    {
+      "id": 210,
+      "result": "Yes",
+      "problem": 201,
+      "team": 48,
+      "submissionTime": 46,
+      "score": "100.000000"
+    },
+    {
+      "id": 211,
+      "result": "No",
+      "problem": 202,
+      "team": 41,
+      "submissionTime": 47,
+      "score": "50.000000"
+    },
+    {
+      "id": 212,
+      "result": "Yes",
+      "problem": 203,
+      "team": 88,
+      "submissionTime": 47,
+      "score": "100.000000"
+    },
+    {
+      "id": 213,
+      "result": "No",
+      "problem": 206,
+      "team": 36,
+      "submissionTime": 47,
+      "score": "0.000000"
+    },
+    {
+      "id": 214,
+      "result": "No",
+      "problem": 207,
+      "team": 91,
+      "submissionTime": 48,
+      "score": "0.000000"
+    },
+    {
+      "id": 215,
+      "result": "Yes",
+      "problem": 208,
+      "team": 50,
+      "submissionTime": 48,
+      "score": "100.000000"
+    },
+    {
+      "id": 216,
+      "result": "No",
+      "problem": 201,
+      "team": 84,
+      "submissionTime": 48,
+      "score": "0.000000"
+    },
+    {
+      "id": 217,
+      "result": "No",
+      "problem": 207,
+      "team": 49,
+      "submissionTime": 49,
+      "score": "30.000000"
+    },
+    {
+      "id": 218,
+      "result": "No",
+      "problem": 208,
+      "team": 75,
+      "submissionTime": 49,
+      "score": "50.000000"
+    },
+    {
+      "id": 219,
+      "result": "No",
+      "problem": 207,
+      "team": 60,
+      "submissionTime": 49,
+      "score": "0.000000"
+    },
+    {
+      "id": 220,
+      "result": "No",
+      "problem": 208,
+      "team": 87,
+      "submissionTime": 50,
+      "score": "50.000000"
+    },
+    {
+      "id": 221,
+      "result": "No",
+      "problem": 205,
+      "team": 37,
+      "submissionTime": 51,
+      "score": "20.000000"
+    },
+    {
+      "id": 222,
+      "result": "No",
+      "problem": 201,
+      "team": 84,
+      "submissionTime": 51,
+      "score": "0.000000"
+    },
+    {
+      "id": 223,
+      "result": "Yes",
+      "problem": 201,
+      "team": 76,
+      "submissionTime": 51,
+      "score": "100.000000"
+    },
+    {
+      "id": 224,
+      "result": "No",
+      "problem": 208,
+      "team": 42,
+      "submissionTime": 52,
+      "score": "50.000000"
+    },
+    {
+      "id": 225,
+      "result": "No",
+      "problem": 206,
+      "team": 71,
+      "submissionTime": 52,
+      "score": "0.000000"
+    },
+    {
+      "id": 226,
+      "result": "No",
+      "problem": 208,
+      "team": 42,
+      "submissionTime": 53,
+      "score": "50.000000"
+    },
+    {
+      "id": 227,
+      "result": "No",
+      "problem": 207,
+      "team": 30,
+      "submissionTime": 53,
+      "score": "0.000000"
+    },
+    {
+      "id": 228,
+      "result": "No",
+      "problem": 207,
+      "team": 60,
+      "submissionTime": 53,
+      "score": "0.000000"
+    },
+    {
+      "id": 229,
+      "result": "Yes",
+      "problem": 201,
+      "team": 88,
+      "submissionTime": 53,
+      "score": "100.000000"
+    },
+    {
+      "id": 230,
+      "result": "No",
+      "problem": 207,
+      "team": 60,
+      "submissionTime": 54,
+      "score": "0.000000"
+    },
+    {
+      "id": 232,
+      "result": "No",
+      "problem": 201,
+      "team": 83,
+      "submissionTime": 54,
+      "score": "0.000000"
+    },
+    {
+      "id": 233,
+      "result": "Yes",
+      "problem": 208,
+      "team": 42,
+      "submissionTime": 54,
+      "score": "100.000000"
+    },
+    {
+      "id": 234,
+      "result": "No",
+      "problem": 207,
+      "team": 47,
+      "submissionTime": 55,
+      "score": "0.000000"
+    },
+    {
+      "id": 236,
+      "result": "Yes",
+      "problem": 208,
+      "team": 71,
+      "submissionTime": 55,
+      "score": "100.000000"
+    },
+    {
+      "id": 237,
+      "result": "No",
+      "problem": 207,
+      "team": 45,
+      "submissionTime": 55,
+      "score": "0.000000"
+    },
+    {
+      "id": 238,
+      "result": "No",
+      "problem": 207,
+      "team": 94,
+      "submissionTime": 55,
+      "score": "0.000000"
+    },
+    {
+      "id": 239,
+      "result": "No",
+      "problem": 201,
+      "team": 34,
+      "submissionTime": 55,
+      "score": "0.000000"
+    },
+    {
+      "id": 240,
+      "result": "No",
+      "problem": 201,
+      "team": 64,
+      "submissionTime": 55,
+      "score": "0.000000"
+    },
+    {
+      "id": 241,
+      "result": "Yes",
+      "problem": 207,
+      "team": 94,
+      "submissionTime": 56,
+      "score": "100.000000"
+    },
+    {
+      "id": 242,
+      "result": "Yes",
+      "problem": 206,
+      "team": 71,
+      "submissionTime": 56,
+      "score": "100.000000"
+    },
+    {
+      "id": 243,
+      "result": "No",
+      "problem": 201,
+      "team": 34,
+      "submissionTime": 56,
+      "score": "0.000000"
+    },
+    {
+      "id": 244,
+      "result": "Yes",
+      "problem": 201,
+      "team": 52,
+      "submissionTime": 56,
+      "score": "100.000000"
+    },
+    {
+      "id": 245,
+      "result": "No",
+      "problem": 202,
+      "team": 69,
+      "submissionTime": 56,
+      "score": "50.000000"
+    },
+    {
+      "id": 247,
+      "result": "No",
+      "problem": 201,
+      "team": 83,
+      "submissionTime": 57,
+      "score": "0.000000"
+    },
+    {
+      "id": 248,
+      "result": "Yes",
+      "problem": 204,
+      "team": 100,
+      "submissionTime": 57,
+      "score": "100.000000"
+    },
+    {
+      "id": 249,
+      "result": "Yes",
+      "problem": 205,
+      "team": 33,
+      "submissionTime": 57,
+      "score": "100.000000"
+    },
+    {
+      "id": 250,
+      "result": "Yes",
+      "problem": 201,
+      "team": 34,
+      "submissionTime": 57,
+      "score": "100.000000"
+    },
+    {
+      "id": 251,
+      "result": "Yes",
+      "problem": 207,
+      "team": 60,
+      "submissionTime": 57,
+      "score": "100.000000"
+    },
+    {
+      "id": 252,
+      "result": "No",
+      "problem": 201,
+      "team": 58,
+      "submissionTime": 58,
+      "score": "0.000000"
+    },
+    {
+      "id": 253,
+      "result": "Yes",
+      "problem": 207,
+      "team": 65,
+      "submissionTime": 58,
+      "score": "100.000000"
+    },
+    {
+      "id": 254,
+      "result": "No",
+      "problem": 201,
+      "team": 81,
+      "submissionTime": 58,
+      "score": "0.000000"
+    },
+    {
+      "id": 255,
+      "result": "Yes",
+      "problem": 208,
+      "team": 29,
+      "submissionTime": 58,
+      "score": "100.000000"
+    },
+    {
+      "id": 256,
+      "result": "Yes",
+      "problem": 206,
+      "team": 42,
+      "submissionTime": 59,
+      "score": "100.000000"
+    },
+    {
+      "id": 257,
+      "result": "Yes",
+      "problem": 207,
+      "team": 90,
+      "submissionTime": 59,
+      "score": "100.000000"
+    },
+    {
+      "id": 258,
+      "result": "No",
+      "problem": 207,
+      "team": 89,
+      "submissionTime": 59,
+      "score": "30.000000"
+    },
+    {
+      "id": 259,
+      "result": "No",
+      "problem": 201,
+      "team": 83,
+      "submissionTime": 59,
+      "score": "0.000000"
+    },
+    {
+      "id": 260,
+      "result": "No",
+      "problem": 207,
+      "team": 47,
+      "submissionTime": 60,
+      "score": "0.000000"
+    },
+    {
+      "id": 261,
+      "result": "No",
+      "problem": 202,
+      "team": 61,
+      "submissionTime": 60,
+      "score": "0.000000"
+    },
+    {
+      "id": 262,
+      "result": "No",
+      "problem": 201,
+      "team": 43,
+      "submissionTime": 60,
+      "score": "0.000000"
+    },
+    {
+      "id": 263,
+      "result": "No",
+      "problem": 208,
+      "team": 49,
+      "submissionTime": 60,
+      "score": "50.000000"
+    },
+    {
+      "id": 264,
+      "result": "No",
+      "problem": 205,
+      "team": 62,
+      "submissionTime": 60,
+      "score": "20.000000"
+    },
+    {
+      "id": 265,
+      "result": "No",
+      "problem": 201,
+      "team": 81,
+      "submissionTime": 61,
+      "score": "0.000000"
+    },
+    {
+      "id": 266,
+      "result": "Yes",
+      "problem": 201,
+      "team": 31,
+      "submissionTime": 61,
+      "score": "100.000000"
+    },
+    {
+      "id": 267,
+      "result": "No",
+      "problem": 206,
+      "team": 36,
+      "submissionTime": 61,
+      "score": "0.000000"
+    },
+    {
+      "id": 268,
+      "result": "No",
+      "problem": 207,
+      "team": 40,
+      "submissionTime": 61,
+      "score": "0.000000"
+    },
+    {
+      "id": 269,
+      "result": "No",
+      "problem": 201,
+      "team": 71,
+      "submissionTime": 61,
+      "score": "0.000000"
+    },
+    {
+      "id": 270,
+      "result": "No",
+      "problem": 201,
+      "team": 83,
+      "submissionTime": 61,
+      "score": "0.000000"
+    },
+    {
+      "id": 271,
+      "result": "No",
+      "problem": 206,
+      "team": 35,
+      "submissionTime": 62,
+      "score": "0.000000"
+    },
+    {
+      "id": 272,
+      "result": "No",
+      "problem": 202,
+      "team": 71,
+      "submissionTime": 62,
+      "score": "0.000000"
+    },
+    {
+      "id": 273,
+      "result": "No",
+      "problem": 201,
+      "team": 58,
+      "submissionTime": 62,
+      "score": "0.000000"
+    },
+    {
+      "id": 274,
+      "result": "No",
+      "problem": 201,
+      "team": 71,
+      "submissionTime": 63,
+      "score": "0.000000"
+    },
+    {
+      "id": 275,
+      "result": "No",
+      "problem": 207,
+      "team": 57,
+      "submissionTime": 64,
+      "score": "30.000000"
+    },
+    {
+      "id": 277,
+      "result": "Yes",
+      "problem": 208,
+      "team": 51,
+      "submissionTime": 64,
+      "score": "100.000000"
+    },
+    {
+      "id": 278,
+      "result": "Yes",
+      "problem": 201,
+      "team": 50,
+      "submissionTime": 64,
+      "score": "100.000000"
+    },
+    {
+      "id": 279,
+      "result": "No",
+      "problem": 206,
+      "team": 80,
+      "submissionTime": 64,
+      "score": "0.000000"
+    },
+    {
+      "id": 280,
+      "result": "No",
+      "problem": 207,
+      "team": 32,
+      "submissionTime": 65,
+      "score": "0.000000"
+    },
+    {
+      "id": 281,
+      "result": "No",
+      "problem": 201,
+      "team": 64,
+      "submissionTime": 65,
+      "score": "0.000000"
+    },
+    {
+      "id": 282,
+      "result": "No",
+      "problem": 205,
+      "team": 82,
+      "submissionTime": 65,
+      "score": "0.000000"
+    },
+    {
+      "id": 283,
+      "result": "Yes",
+      "problem": 206,
+      "team": 89,
+      "submissionTime": 66,
+      "score": "100.000000"
+    },
+    {
+      "id": 284,
+      "result": "Yes",
+      "problem": 206,
+      "team": 80,
+      "submissionTime": 66,
+      "score": "100.000000"
+    },
+    {
+      "id": 285,
+      "result": "No",
+      "problem": 201,
+      "team": 25,
+      "submissionTime": 66,
+      "score": "0.000000"
+    },
+    {
+      "id": 286,
+      "result": "No",
+      "problem": 207,
+      "team": 37,
+      "submissionTime": 66,
+      "score": "0.000000"
+    },
+    {
+      "id": 287,
+      "result": "No",
+      "problem": 201,
+      "team": 29,
+      "submissionTime": 66,
+      "score": "0.000000"
+    },
+    {
+      "id": 288,
+      "result": "Yes",
+      "problem": 207,
+      "team": 48,
+      "submissionTime": 67,
+      "score": "100.000000"
+    },
+    {
+      "id": 289,
+      "result": "No",
+      "problem": 207,
+      "team": 30,
+      "submissionTime": 67,
+      "score": "0.000000"
+    },
+    {
+      "id": 290,
+      "result": "No",
+      "problem": 201,
+      "team": 84,
+      "submissionTime": 67,
+      "score": "0.000000"
+    },
+    {
+      "id": 291,
+      "result": "No",
+      "problem": 201,
+      "team": 86,
+      "submissionTime": 68,
+      "score": "0.000000"
+    },
+    {
+      "id": 292,
+      "result": "Yes",
+      "problem": 206,
+      "team": 51,
+      "submissionTime": 68,
+      "score": "100.000000"
+    },
+    {
+      "id": 293,
+      "result": "No",
+      "problem": 201,
+      "team": 41,
+      "submissionTime": 68,
+      "score": "0.000000"
+    },
+    {
+      "id": 294,
+      "result": "No",
+      "problem": 207,
+      "team": 88,
+      "submissionTime": 68,
+      "score": "0.000000"
+    },
+    {
+      "id": 295,
+      "result": "Yes",
+      "problem": 206,
+      "team": 36,
+      "submissionTime": 68,
+      "score": "100.000000"
+    },
+    {
+      "id": 296,
+      "result": "No",
+      "problem": 201,
+      "team": 84,
+      "submissionTime": 68,
+      "score": "0.000000"
+    },
+    {
+      "id": 297,
+      "result": "Yes",
+      "problem": 207,
+      "team": 78,
+      "submissionTime": 69,
+      "score": "100.000000"
+    },
+    {
+      "id": 298,
+      "result": "No",
+      "problem": 205,
+      "team": 82,
+      "submissionTime": 70,
+      "score": "20.000000"
+    },
+    {
+      "id": 299,
+      "result": "Yes",
+      "problem": 206,
+      "team": 35,
+      "submissionTime": 70,
+      "score": "100.000000"
+    },
+    {
+      "id": 301,
+      "result": "Yes",
+      "problem": 206,
+      "team": 75,
+      "submissionTime": 71,
+      "score": "100.000000"
+    },
+    {
+      "id": 302,
+      "result": "No",
+      "problem": 201,
+      "team": 85,
+      "submissionTime": 71,
+      "score": "0.000000"
+    },
+    {
+      "id": 303,
+      "result": "No",
+      "problem": 207,
+      "team": 88,
+      "submissionTime": 71,
+      "score": "0.000000"
+    },
+    {
+      "id": 304,
+      "result": "Yes",
+      "problem": 201,
+      "team": 25,
+      "submissionTime": 71,
+      "score": "100.000000"
+    },
+    {
+      "id": 306,
+      "result": "Yes",
+      "problem": 208,
+      "team": 87,
+      "submissionTime": 71,
+      "score": "100.000000"
+    },
+    {
+      "id": 308,
+      "result": "Yes",
+      "problem": 201,
+      "team": 64,
+      "submissionTime": 72,
+      "score": "100.000000"
+    },
+    {
+      "id": 309,
+      "result": "No",
+      "problem": 207,
+      "team": 40,
+      "submissionTime": 72,
+      "score": "0.000000"
+    },
+    {
+      "id": 310,
+      "result": "Yes",
+      "problem": 201,
+      "team": 29,
+      "submissionTime": 72,
+      "score": "100.000000"
+    },
+    {
+      "id": 311,
+      "result": "Yes",
+      "problem": 201,
+      "team": 58,
+      "submissionTime": 72,
+      "score": "100.000000"
+    },
+    {
+      "id": 312,
+      "result": "No",
+      "problem": 207,
+      "team": 30,
+      "submissionTime": 72,
+      "score": "0.000000"
+    },
+    {
+      "id": 313,
+      "result": "No",
+      "problem": 207,
+      "team": 52,
+      "submissionTime": 72,
+      "score": "30.000000"
+    },
+    {
+      "id": 314,
+      "result": "Yes",
+      "problem": 201,
+      "team": 82,
+      "submissionTime": 73,
+      "score": "100.000000"
+    },
+    {
+      "id": 315,
+      "result": "No",
+      "problem": 207,
+      "team": 43,
+      "submissionTime": 73,
+      "score": "0.000000"
+    },
+    {
+      "id": 316,
+      "result": "No",
+      "problem": 202,
+      "team": 62,
+      "submissionTime": 73,
+      "score": "50.000000"
+    },
+    {
+      "id": 317,
+      "result": "No",
+      "problem": 201,
+      "team": 84,
+      "submissionTime": 73,
+      "score": "0.000000"
+    },
+    {
+      "id": 318,
+      "result": "Yes",
+      "problem": 201,
+      "team": 81,
+      "submissionTime": 73,
+      "score": "100.000000"
+    },
+    {
+      "id": 320,
+      "result": "No",
+      "problem": 201,
+      "team": 91,
+      "submissionTime": 74,
+      "score": "0.000000"
+    },
+    {
+      "id": 321,
+      "result": "No",
+      "problem": 201,
+      "team": 89,
+      "submissionTime": 74,
+      "score": "0.000000"
+    },
+    {
+      "id": 322,
+      "result": "Yes",
+      "problem": 201,
+      "team": 85,
+      "submissionTime": 74,
+      "score": "100.000000"
+    },
+    {
+      "id": 323,
+      "result": "No",
+      "problem": 207,
+      "team": 30,
+      "submissionTime": 75,
+      "score": "0.000000"
+    },
+    {
+      "id": 324,
+      "result": "No",
+      "problem": 207,
+      "team": 45,
+      "submissionTime": 75,
+      "score": "0.000000"
+    },
+    {
+      "id": 325,
+      "result": "No",
+      "problem": 207,
+      "team": 72,
+      "submissionTime": 75,
+      "score": "30.000000"
+    },
+    {
+      "id": 326,
+      "result": "No",
+      "problem": 208,
+      "team": 92,
+      "submissionTime": 77,
+      "score": "0.000000"
+    },
+    {
+      "id": 327,
+      "result": "No",
+      "problem": 201,
+      "team": 60,
+      "submissionTime": 77,
+      "score": "0.000000"
+    },
+    {
+      "id": 328,
+      "result": "No",
+      "problem": 202,
+      "team": 94,
+      "submissionTime": 77,
+      "score": "0.000000"
+    },
+    {
+      "id": 329,
+      "result": "Yes",
+      "problem": 201,
+      "team": 60,
+      "submissionTime": 77,
+      "score": "100.000000"
+    },
+    {
+      "id": 330,
+      "result": "No",
+      "problem": 201,
+      "team": 91,
+      "submissionTime": 77,
+      "score": "0.000000"
+    },
+    {
+      "id": 331,
+      "result": "No",
+      "problem": 207,
+      "team": 37,
+      "submissionTime": 78,
+      "score": "0.000000"
+    },
+    {
+      "id": 332,
+      "result": "Yes",
+      "problem": 208,
+      "team": 70,
+      "submissionTime": 78,
+      "score": "100.000000"
+    },
+    {
+      "id": 333,
+      "result": "No",
+      "problem": 207,
+      "team": 71,
+      "submissionTime": 78,
+      "score": "0.000000"
+    },
+    {
+      "id": 334,
+      "result": "No",
+      "problem": 201,
+      "team": 89,
+      "submissionTime": 78,
+      "score": "0.000000"
+    },
+    {
+      "id": 335,
+      "result": "No",
+      "problem": 202,
+      "team": 94,
+      "submissionTime": 79,
+      "score": "50.000000"
+    },
+    {
+      "id": 336,
+      "result": "No",
+      "problem": 207,
+      "team": 47,
+      "submissionTime": 79,
+      "score": "0.000000"
+    },
+    {
+      "id": 337,
+      "result": "No",
+      "problem": 203,
+      "team": 68,
+      "submissionTime": 79,
+      "score": "90.000000"
+    },
+    {
+      "id": 338,
+      "result": "No",
+      "problem": 201,
+      "team": 83,
+      "submissionTime": 79,
+      "score": "0.000000"
+    },
+    {
+      "id": 339,
+      "result": "No",
+      "problem": 207,
+      "team": 38,
+      "submissionTime": 79,
+      "score": "0.000000"
+    },
+    {
+      "id": 340,
+      "result": "No",
+      "problem": 201,
+      "team": 91,
+      "submissionTime": 80,
+      "score": "0.000000"
+    },
+    {
+      "id": 341,
+      "result": "No",
+      "problem": 207,
+      "team": 30,
+      "submissionTime": 80,
+      "score": "0.000000"
+    },
+    {
+      "id": 342,
+      "result": "No",
+      "problem": 201,
+      "team": 86,
+      "submissionTime": 80,
+      "score": "0.000000"
+    },
+    {
+      "id": 343,
+      "result": "No",
+      "problem": 201,
+      "team": 89,
+      "submissionTime": 80,
+      "score": "0.000000"
+    },
+    {
+      "id": 344,
+      "result": "No",
+      "problem": 201,
+      "team": 86,
+      "submissionTime": 81,
+      "score": "0.000000"
+    },
+    {
+      "id": 345,
+      "result": "No",
+      "problem": 203,
+      "team": 68,
+      "submissionTime": 81,
+      "score": "90.000000"
+    },
+    {
+      "id": 346,
+      "result": "No",
+      "problem": 202,
+      "team": 28,
+      "submissionTime": 81,
+      "score": "50.000000"
+    },
+    {
+      "id": 347,
+      "result": "No",
+      "problem": 202,
+      "team": 57,
+      "submissionTime": 81,
+      "score": "0.000000"
+    },
+    {
+      "id": 349,
+      "result": "No",
+      "problem": 207,
+      "team": 30,
+      "submissionTime": 81,
+      "score": "0.000000"
+    },
+    {
+      "id": 350,
+      "result": "No",
+      "problem": 207,
+      "team": 49,
+      "submissionTime": 82,
+      "score": "0.000000"
+    },
+    {
+      "id": 351,
+      "result": "No",
+      "problem": 207,
+      "team": 43,
+      "submissionTime": 82,
+      "score": "30.000000"
+    },
+    {
+      "id": 352,
+      "result": "No",
+      "problem": 207,
+      "team": 71,
+      "submissionTime": 83,
+      "score": "30.000000"
+    },
+    {
+      "id": 353,
+      "result": "Yes",
+      "problem": 208,
+      "team": 75,
+      "submissionTime": 83,
+      "score": "100.000000"
+    },
+    {
+      "id": 354,
+      "result": "No",
+      "problem": 202,
+      "team": 57,
+      "submissionTime": 83,
+      "score": "50.000000"
+    },
+    {
+      "id": 355,
+      "result": "No",
+      "problem": 208,
+      "team": 26,
+      "submissionTime": 84,
+      "score": "0.000000"
+    },
+    {
+      "id": 356,
+      "result": "No",
+      "problem": 207,
+      "team": 69,
+      "submissionTime": 84,
+      "score": "0.000000"
+    },
+    {
+      "id": 357,
+      "result": "No",
+      "problem": 201,
+      "team": 83,
+      "submissionTime": 84,
+      "score": "0.000000"
+    },
+    {
+      "id": 360,
+      "result": "Yes",
+      "problem": 201,
+      "team": 42,
+      "submissionTime": 85,
+      "score": "100.000000"
+    },
+    {
+      "id": 361,
+      "result": "Yes",
+      "problem": 206,
+      "team": 87,
+      "submissionTime": 86,
+      "score": "100.000000"
+    },
+    {
+      "id": 362,
+      "result": "No",
+      "problem": 202,
+      "team": 48,
+      "submissionTime": 86,
+      "score": "50.000000"
+    },
+    {
+      "id": 363,
+      "result": "No",
+      "problem": 208,
+      "team": 26,
+      "submissionTime": 86,
+      "score": "0.000000"
+    },
+    {
+      "id": 364,
+      "result": "No",
+      "problem": 203,
+      "team": 61,
+      "submissionTime": 87,
+      "score": "90.000000"
+    },
+    {
+      "id": 365,
+      "result": "Yes",
+      "problem": 206,
+      "team": 46,
+      "submissionTime": 88,
+      "score": "100.000000"
+    },
+    {
+      "id": 366,
+      "result": "Yes",
+      "problem": 207,
+      "team": 88,
+      "submissionTime": 88,
+      "score": "100.000000"
+    },
+    {
+      "id": 367,
+      "result": "No",
+      "problem": 207,
+      "team": 81,
+      "submissionTime": 88,
+      "score": "30.000000"
+    },
+    {
+      "id": 368,
+      "result": "No",
+      "problem": 208,
+      "team": 63,
+      "submissionTime": 89,
+      "score": "50.000000"
+    },
+    {
+      "id": 369,
+      "result": "No",
+      "problem": 201,
+      "team": 83,
+      "submissionTime": 89,
+      "score": "0.000000"
+    },
+    {
+      "id": 370,
+      "result": "No",
+      "problem": 205,
+      "team": 53,
+      "submissionTime": 89,
+      "score": "40.000000"
+    },
+    {
+      "id": 371,
+      "result": "No",
+      "problem": 203,
+      "team": 33,
+      "submissionTime": 89,
+      "score": "90.000000"
+    },
+    {
+      "id": 372,
+      "result": "No",
+      "problem": 201,
+      "team": 91,
+      "submissionTime": 90,
+      "score": "0.000000"
+    },
+    {
+      "id": 373,
+      "result": "No",
+      "problem": 207,
+      "team": 45,
+      "submissionTime": 90,
+      "score": "0.000000"
+    },
+    {
+      "id": 374,
+      "result": "Yes",
+      "problem": 201,
+      "team": 83,
+      "submissionTime": 90,
+      "score": "100.000000"
+    },
+    {
+      "id": 375,
+      "result": "No",
+      "problem": 208,
+      "team": 26,
+      "submissionTime": 90,
+      "score": "0.000000"
+    },
+    {
+      "id": 376,
+      "result": "No",
+      "problem": 207,
+      "team": 71,
+      "submissionTime": 91,
+      "score": "0.000000"
+    },
+    {
+      "id": 377,
+      "result": "No",
+      "problem": 207,
+      "team": 40,
+      "submissionTime": 91,
+      "score": "0.000000"
+    },
+    {
+      "id": 378,
+      "result": "Yes",
+      "problem": 207,
+      "team": 68,
+      "submissionTime": 91,
+      "score": "100.000000"
+    },
+    {
+      "id": 379,
+      "result": "No",
+      "problem": 202,
+      "team": 76,
+      "submissionTime": 91,
+      "score": "0.000000"
+    },
+    {
+      "id": 380,
+      "result": "No",
+      "problem": 208,
+      "team": 26,
+      "submissionTime": 91,
+      "score": "0.000000"
+    },
+    {
+      "id": 381,
+      "result": "No",
+      "problem": 201,
+      "team": 77,
+      "submissionTime": 92,
+      "score": "0.000000"
+    },
+    {
+      "id": 382,
+      "result": "No",
+      "problem": 207,
+      "team": 71,
+      "submissionTime": 93,
+      "score": "0.000000"
+    },
+    {
+      "id": 383,
+      "result": "No",
+      "problem": 201,
+      "team": 75,
+      "submissionTime": 93,
+      "score": "0.000000"
+    },
+    {
+      "id": 384,
+      "result": "No",
+      "problem": 202,
+      "team": 76,
+      "submissionTime": 93,
+      "score": "0.000000"
+    },
+    {
+      "id": 385,
+      "result": "No",
+      "problem": 207,
+      "team": 47,
+      "submissionTime": 93,
+      "score": "0.000000"
+    },
+    {
+      "id": 386,
+      "result": "Yes",
+      "problem": 207,
+      "team": 58,
+      "submissionTime": 93,
+      "score": "100.000000"
+    },
+    {
+      "id": 387,
+      "result": "No",
+      "problem": 202,
+      "team": 94,
+      "submissionTime": 93,
+      "score": "0.000000"
+    },
+    {
+      "id": 388,
+      "result": "No",
+      "problem": 203,
+      "team": 33,
+      "submissionTime": 94,
+      "score": "90.000000"
+    },
+    {
+      "id": 389,
+      "result": "No",
+      "problem": 202,
+      "team": 90,
+      "submissionTime": 94,
+      "score": "50.000000"
+    },
+    {
+      "id": 390,
+      "result": "No",
+      "problem": 205,
+      "team": 96,
+      "submissionTime": 94,
+      "score": "40.000000"
+    },
+    {
+      "id": 391,
+      "result": "No",
+      "problem": 207,
+      "team": 30,
+      "submissionTime": 94,
+      "score": "0.000000"
+    },
+    {
+      "id": 392,
+      "result": "Yes",
+      "problem": 206,
+      "team": 44,
+      "submissionTime": 94,
+      "score": "100.000000"
+    },
+    {
+      "id": 393,
+      "result": "No",
+      "problem": 203,
+      "team": 61,
+      "submissionTime": 95,
+      "score": "90.000000"
+    },
+    {
+      "id": 394,
+      "result": "No",
+      "problem": 202,
+      "team": 54,
+      "submissionTime": 95,
+      "score": "50.000000"
+    },
+    {
+      "id": 395,
+      "result": "No",
+      "problem": 202,
+      "team": 76,
+      "submissionTime": 95,
+      "score": "50.000000"
+    },
+    {
+      "id": 397,
+      "result": "No",
+      "problem": 202,
+      "team": 35,
+      "submissionTime": 96,
+      "score": "50.000000"
+    },
+    {
+      "id": 398,
+      "result": "Yes",
+      "problem": 201,
+      "team": 75,
+      "submissionTime": 96,
+      "score": "100.000000"
+    },
+    {
+      "id": 399,
+      "result": "Yes",
+      "problem": 208,
+      "team": 66,
+      "submissionTime": 97,
+      "score": "100.000000"
+    },
+    {
+      "id": 400,
+      "result": "No",
+      "problem": 201,
+      "team": 86,
+      "submissionTime": 99,
+      "score": "0.000000"
+    },
+    {
+      "id": 401,
+      "result": "Yes",
+      "problem": 202,
+      "team": 78,
+      "submissionTime": 99,
+      "score": "100.000000"
+    },
+    {
+      "id": 402,
+      "result": "No",
+      "problem": 201,
+      "team": 59,
+      "submissionTime": 99,
+      "score": "0.000000"
+    },
+    {
+      "id": 403,
+      "result": "No",
+      "problem": 201,
+      "team": 91,
+      "submissionTime": 99,
+      "score": "0.000000"
+    },
+    {
+      "id": 404,
+      "result": "No",
+      "problem": 203,
+      "team": 25,
+      "submissionTime": 100,
+      "score": "0.000000"
+    },
+    {
+      "id": 405,
+      "result": "No",
+      "problem": 203,
+      "team": 61,
+      "submissionTime": 100,
+      "score": "90.000000"
+    },
+    {
+      "id": 406,
+      "result": "Yes",
+      "problem": 208,
+      "team": 27,
+      "submissionTime": 100,
+      "score": "100.000000"
+    },
+    {
+      "id": 408,
+      "result": "No",
+      "problem": 203,
+      "team": 25,
+      "submissionTime": 101,
+      "score": "10.000000"
+    },
+    {
+      "id": 409,
+      "result": "No",
+      "problem": 201,
+      "team": 89,
+      "submissionTime": 102,
+      "score": "0.000000"
+    },
+    {
+      "id": 410,
+      "result": "No",
+      "problem": 205,
+      "team": 57,
+      "submissionTime": 102,
+      "score": "0.000000"
+    },
+    {
+      "id": 411,
+      "result": "Yes",
+      "problem": 207,
+      "team": 45,
+      "submissionTime": 103,
+      "score": "100.000000"
+    },
+    {
+      "id": 412,
+      "result": "Yes",
+      "problem": 201,
+      "team": 62,
+      "submissionTime": 103,
+      "score": "100.000000"
+    },
+    {
+      "id": 413,
+      "result": "No",
+      "problem": 208,
+      "team": 92,
+      "submissionTime": 104,
+      "score": "0.000000"
+    },
+    {
+      "id": 414,
+      "result": "No",
+      "problem": 202,
+      "team": 55,
+      "submissionTime": 104,
+      "score": "0.000000"
+    },
+    {
+      "id": 415,
+      "result": "No",
+      "problem": 205,
+      "team": 74,
+      "submissionTime": 104,
+      "score": "20.000000"
+    },
+    {
+      "id": 416,
+      "result": "No",
+      "problem": 201,
+      "team": 54,
+      "submissionTime": 105,
+      "score": "0.000000"
+    },
+    {
+      "id": 417,
+      "result": "No",
+      "problem": 207,
+      "team": 64,
+      "submissionTime": 105,
+      "score": "0.000000"
+    },
+    {
+      "id": 418,
+      "result": "No",
+      "problem": 202,
+      "team": 55,
+      "submissionTime": 105,
+      "score": "0.000000"
+    },
+    {
+      "id": 419,
+      "result": "No",
+      "problem": 203,
+      "team": 84,
+      "submissionTime": 106,
+      "score": "0.000000"
+    },
+    {
+      "id": 420,
+      "result": "No",
+      "problem": 202,
+      "team": 34,
+      "submissionTime": 106,
+      "score": "0.000000"
+    },
+    {
+      "id": 421,
+      "result": "No",
+      "problem": 201,
+      "team": 73,
+      "submissionTime": 106,
+      "score": "0.000000"
+    },
+    {
+      "id": 422,
+      "result": "No",
+      "problem": 202,
+      "team": 31,
+      "submissionTime": 108,
+      "score": "0.000000"
+    },
+    {
+      "id": 423,
+      "result": "No",
+      "problem": 207,
+      "team": 50,
+      "submissionTime": 109,
+      "score": "30.000000"
+    },
+    {
+      "id": 424,
+      "result": "No",
+      "problem": 201,
+      "team": 73,
+      "submissionTime": 109,
+      "score": "0.000000"
+    },
+    {
+      "id": 425,
+      "result": "Yes",
+      "problem": 201,
+      "team": 87,
+      "submissionTime": 110,
+      "score": "100.000000"
+    },
+    {
+      "id": 427,
+      "result": "No",
+      "problem": 207,
+      "team": 71,
+      "submissionTime": 110,
+      "score": "30.000000"
+    },
+    {
+      "id": 428,
+      "result": "Yes",
+      "problem": 208,
+      "team": 92,
+      "submissionTime": 110,
+      "score": "100.000000"
+    },
+    {
+      "id": 429,
+      "result": "No",
+      "problem": 202,
+      "team": 82,
+      "submissionTime": 110,
+      "score": "0.000000"
+    },
+    {
+      "id": 430,
+      "result": "No",
+      "problem": 207,
+      "team": 71,
+      "submissionTime": 110,
+      "score": "30.000000"
+    },
+    {
+      "id": 432,
+      "result": "Yes",
+      "problem": 203,
+      "team": 100,
+      "submissionTime": 111,
+      "score": "100.000000"
+    },
+    {
+      "id": 433,
+      "result": "No",
+      "problem": 207,
+      "team": 35,
+      "submissionTime": 112,
+      "score": "30.000000"
+    },
+    {
+      "id": 434,
+      "result": "Yes",
+      "problem": 201,
+      "team": 91,
+      "submissionTime": 112,
+      "score": "100.000000"
+    },
+    {
+      "id": 435,
+      "result": "No",
+      "problem": 202,
+      "team": 40,
+      "submissionTime": 112,
+      "score": "50.000000"
+    },
+    {
+      "id": 436,
+      "result": "No",
+      "problem": 205,
+      "team": 57,
+      "submissionTime": 113,
+      "score": "40.000000"
+    },
+    {
+      "id": 437,
+      "result": "No",
+      "problem": 203,
+      "team": 84,
+      "submissionTime": 113,
+      "score": "0.000000"
+    },
+    {
+      "id": 439,
+      "result": "No",
+      "problem": 202,
+      "team": 82,
+      "submissionTime": 113,
+      "score": "0.000000"
+    },
+    {
+      "id": 440,
+      "result": "Yes",
+      "problem": 207,
+      "team": 30,
+      "submissionTime": 114,
+      "score": "100.000000"
+    },
+    {
+      "id": 441,
+      "result": "No",
+      "problem": 207,
+      "team": 38,
+      "submissionTime": 114,
+      "score": "0.000000"
+    },
+    {
+      "id": 442,
+      "result": "No",
+      "problem": 203,
+      "team": 95,
+      "submissionTime": 115,
+      "score": "0.000000"
+    },
+    {
+      "id": 444,
+      "result": "No",
+      "problem": 207,
+      "team": 77,
+      "submissionTime": 115,
+      "score": "30.000000"
+    },
+    {
+      "id": 445,
+      "result": "No",
+      "problem": 208,
+      "team": 44,
+      "submissionTime": 115,
+      "score": "0.000000"
+    },
+    {
+      "id": 446,
+      "result": "No",
+      "problem": 201,
+      "team": 51,
+      "submissionTime": 116,
+      "score": "0.000000"
+    },
+    {
+      "id": 448,
+      "result": "No",
+      "problem": 202,
+      "team": 61,
+      "submissionTime": 116,
+      "score": "0.000000"
+    },
+    {
+      "id": 449,
+      "result": "No",
+      "problem": 208,
+      "team": 44,
+      "submissionTime": 117,
+      "score": "50.000000"
+    },
+    {
+      "id": 450,
+      "result": "No",
+      "problem": 202,
+      "team": 82,
+      "submissionTime": 117,
+      "score": "0.000000"
+    },
+    {
+      "id": 452,
+      "result": "No",
+      "problem": 207,
+      "team": 70,
+      "submissionTime": 118,
+      "score": "30.000000"
+    },
+    {
+      "id": 453,
+      "result": "No",
+      "problem": 202,
+      "team": 34,
+      "submissionTime": 118,
+      "score": "0.000000"
+    },
+    {
+      "id": 454,
+      "result": "No",
+      "problem": 208,
+      "team": 93,
+      "submissionTime": 118,
+      "score": "50.000000"
+    },
+    {
+      "id": 455,
+      "result": "No",
+      "problem": 205,
+      "team": 52,
+      "submissionTime": 118,
+      "score": "20.000000"
+    },
+    {
+      "id": 456,
+      "result": "No",
+      "problem": 202,
+      "team": 82,
+      "submissionTime": 119,
+      "score": "50.000000"
+    },
+    {
+      "id": 458,
+      "result": "No",
+      "problem": 202,
+      "team": 42,
+      "submissionTime": 119,
+      "score": "0.000000"
+    },
+    {
+      "id": 459,
+      "result": "No",
+      "problem": 207,
+      "team": 63,
+      "submissionTime": 119,
+      "score": "0.000000"
+    },
+    {
+      "id": 461,
+      "result": "No",
+      "problem": 208,
+      "team": 93,
+      "submissionTime": 120,
+      "score": "50.000000"
+    },
+    {
+      "id": 462,
+      "result": "No",
+      "problem": 202,
+      "team": 89,
+      "submissionTime": 120,
+      "score": "0.000000"
+    },
+    {
+      "id": 463,
+      "result": "No",
+      "problem": 202,
+      "team": 50,
+      "submissionTime": 120,
+      "score": "50.000000"
+    },
+    {
+      "id": 464,
+      "result": "Yes",
+      "problem": 206,
+      "team": 92,
+      "submissionTime": 121,
+      "score": "100.000000"
+    },
+    {
+      "id": 465,
+      "result": "No",
+      "problem": 207,
+      "team": 37,
+      "submissionTime": 121,
+      "score": "0.000000"
+    },
+    {
+      "id": 466,
+      "result": "No",
+      "problem": 201,
+      "team": 43,
+      "submissionTime": 121,
+      "score": "0.000000"
+    },
+    {
+      "id": 467,
+      "result": "No",
+      "problem": 202,
+      "team": 31,
+      "submissionTime": 121,
+      "score": "0.000000"
+    },
+    {
+      "id": 468,
+      "result": "No",
+      "problem": 207,
+      "team": 38,
+      "submissionTime": 122,
+      "score": "0.000000"
+    },
+    {
+      "id": 469,
+      "result": "No",
+      "problem": 202,
+      "team": 72,
+      "submissionTime": 122,
+      "score": "0.000000"
+    },
+    {
+      "id": 470,
+      "result": "No",
+      "problem": 208,
+      "team": 44,
+      "submissionTime": 122,
+      "score": "50.000000"
+    },
+    {
+      "id": 471,
+      "result": "Yes",
+      "problem": 202,
+      "team": 28,
+      "submissionTime": 122,
+      "score": "100.000000"
+    },
+    {
+      "id": 472,
+      "result": "No",
+      "problem": 202,
+      "team": 89,
+      "submissionTime": 123,
+      "score": "0.000000"
+    },
+    {
+      "id": 473,
+      "result": "No",
+      "problem": 208,
+      "team": 93,
+      "submissionTime": 123,
+      "score": "50.000000"
+    },
+    {
+      "id": 474,
+      "result": "No",
+      "problem": 202,
+      "team": 42,
+      "submissionTime": 123,
+      "score": "0.000000"
+    },
+    {
+      "id": 475,
+      "result": "No",
+      "problem": 207,
+      "team": 46,
+      "submissionTime": 123,
+      "score": "30.000000"
+    },
+    {
+      "id": 476,
+      "result": "No",
+      "problem": 202,
+      "team": 45,
+      "submissionTime": 124,
+      "score": "0.000000"
+    },
+    {
+      "id": 477,
+      "result": "No",
+      "problem": 207,
+      "team": 40,
+      "submissionTime": 124,
+      "score": "30.000000"
+    },
+    {
+      "id": 478,
+      "result": "No",
+      "problem": 207,
+      "team": 53,
+      "submissionTime": 124,
+      "score": "30.000000"
+    },
+    {
+      "id": 479,
+      "result": "No",
+      "problem": 202,
+      "team": 72,
+      "submissionTime": 124,
+      "score": "50.000000"
+    },
+    {
+      "id": 481,
+      "result": "No",
+      "problem": 207,
+      "team": 26,
+      "submissionTime": 125,
+      "score": "30.000000"
+    },
+    {
+      "id": 482,
+      "result": "No",
+      "problem": 208,
+      "team": 44,
+      "submissionTime": 125,
+      "score": "50.000000"
+    },
+    {
+      "id": 483,
+      "result": "No",
+      "problem": 202,
+      "team": 45,
+      "submissionTime": 125,
+      "score": "50.000000"
+    },
+    {
+      "id": 484,
+      "result": "No",
+      "problem": 203,
+      "team": 95,
+      "submissionTime": 126,
+      "score": "0.000000"
+    },
+    {
+      "id": 486,
+      "result": "No",
+      "problem": 207,
+      "team": 47,
+      "submissionTime": 127,
+      "score": "30.000000"
+    },
+    {
+      "id": 487,
+      "result": "Yes",
+      "problem": 208,
+      "team": 83,
+      "submissionTime": 127,
+      "score": "100.000000"
+    },
+    {
+      "id": 488,
+      "result": "No",
+      "problem": 202,
+      "team": 58,
+      "submissionTime": 127,
+      "score": "50.000000"
+    },
+    {
+      "id": 489,
+      "result": "No",
+      "problem": 207,
+      "team": 64,
+      "submissionTime": 127,
+      "score": "0.000000"
+    },
+    {
+      "id": 490,
+      "result": "No",
+      "problem": 207,
+      "team": 74,
+      "submissionTime": 128,
+      "score": "30.000000"
+    },
+    {
+      "id": 491,
+      "result": "No",
+      "problem": 207,
+      "team": 37,
+      "submissionTime": 128,
+      "score": "0.000000"
+    },
+    {
+      "id": 492,
+      "result": "Yes",
+      "problem": 207,
+      "team": 38,
+      "submissionTime": 128,
+      "score": "100.000000"
+    },
+    {
+      "id": 493,
+      "result": "Yes",
+      "problem": 201,
+      "team": 61,
+      "submissionTime": 128,
+      "score": "100.000000"
+    },
+    {
+      "id": 494,
+      "result": "No",
+      "problem": 205,
+      "team": 81,
+      "submissionTime": 128,
+      "score": "0.000000"
+    },
+    {
+      "id": 495,
+      "result": "No",
+      "problem": 202,
+      "team": 31,
+      "submissionTime": 129,
+      "score": "0.000000"
+    },
+    {
+      "id": 496,
+      "result": "Yes",
+      "problem": 207,
+      "team": 57,
+      "submissionTime": 129,
+      "score": "100.000000"
+    },
+    {
+      "id": 497,
+      "result": "Yes",
+      "problem": 208,
+      "team": 93,
+      "submissionTime": 129,
+      "score": "100.000000"
+    },
+    {
+      "id": 498,
+      "result": "No",
+      "problem": 207,
+      "team": 64,
+      "submissionTime": 129,
+      "score": "0.000000"
+    },
+    {
+      "id": 499,
+      "result": "No",
+      "problem": 207,
+      "team": 34,
+      "submissionTime": 130,
+      "score": "0.000000"
+    },
+    {
+      "id": 500,
+      "result": "No",
+      "problem": 202,
+      "team": 90,
+      "submissionTime": 130,
+      "score": "0.000000"
+    },
+    {
+      "id": 501,
+      "result": "No",
+      "problem": 207,
+      "team": 47,
+      "submissionTime": 131,
+      "score": "30.000000"
+    },
+    {
+      "id": 502,
+      "result": "Yes",
+      "problem": 202,
+      "team": 33,
+      "submissionTime": 131,
+      "score": "100.000000"
+    },
+    {
+      "id": 503,
+      "result": "No",
+      "problem": 202,
+      "team": 56,
+      "submissionTime": 131,
+      "score": "0.000000"
+    },
+    {
+      "id": 504,
+      "result": "Yes",
+      "problem": 201,
+      "team": 38,
+      "submissionTime": 132,
+      "score": "100.000000"
+    },
+    {
+      "id": 505,
+      "result": "No",
+      "problem": 202,
+      "team": 61,
+      "submissionTime": 132,
+      "score": "0.000000"
+    },
+    {
+      "id": 506,
+      "result": "No",
+      "problem": 202,
+      "team": 31,
+      "submissionTime": 132,
+      "score": "0.000000"
+    },
+    {
+      "id": 507,
+      "result": "No",
+      "problem": 201,
+      "team": 89,
+      "submissionTime": 132,
+      "score": "0.000000"
+    },
+    {
+      "id": 508,
+      "result": "No",
+      "problem": 207,
+      "team": 35,
+      "submissionTime": 133,
+      "score": "30.000000"
+    },
+    {
+      "id": 509,
+      "result": "No",
+      "problem": 205,
+      "team": 81,
+      "submissionTime": 133,
+      "score": "0.000000"
+    },
+    {
+      "id": 510,
+      "result": "No",
+      "problem": 207,
+      "team": 40,
+      "submissionTime": 133,
+      "score": "0.000000"
+    },
+    {
+      "id": 511,
+      "result": "No",
+      "problem": 207,
+      "team": 83,
+      "submissionTime": 134,
+      "score": "0.000000"
+    },
+    {
+      "id": 512,
+      "result": "No",
+      "problem": 205,
+      "team": 72,
+      "submissionTime": 134,
+      "score": "20.000000"
+    },
+    {
+      "id": 513,
+      "result": "No",
+      "problem": 207,
+      "team": 28,
+      "submissionTime": 135,
+      "score": "0.000000"
+    },
+    {
+      "id": 514,
+      "result": "No",
+      "problem": 202,
+      "team": 61,
+      "submissionTime": 135,
+      "score": "0.000000"
+    },
+    {
+      "id": 515,
+      "result": "No",
+      "problem": 201,
+      "team": 89,
+      "submissionTime": 136,
+      "score": "0.000000"
+    },
+    {
+      "id": 516,
+      "result": "Yes",
+      "problem": 205,
+      "team": 68,
+      "submissionTime": 136,
+      "score": "100.000000"
+    },
+    {
+      "id": 517,
+      "result": "Yes",
+      "problem": 205,
+      "team": 68,
+      "submissionTime": 136,
+      "score": "100.000000"
+    },
+    {
+      "id": 518,
+      "result": "No",
+      "problem": 202,
+      "team": 31,
+      "submissionTime": 136,
+      "score": "0.000000"
+    },
+    {
+      "id": 519,
+      "result": "No",
+      "problem": 202,
+      "team": 56,
+      "submissionTime": 136,
+      "score": "0.000000"
+    },
+    {
+      "id": 520,
+      "result": "Yes",
+      "problem": 207,
+      "team": 55,
+      "submissionTime": 136,
+      "score": "100.000000"
+    },
+    {
+      "id": 521,
+      "result": "No",
+      "problem": 202,
+      "team": 60,
+      "submissionTime": 136,
+      "score": "50.000000"
+    },
+    {
+      "id": 522,
+      "result": "No",
+      "problem": 201,
+      "team": 89,
+      "submissionTime": 136,
+      "score": "0.000000"
+    },
+    {
+      "id": 523,
+      "result": "No",
+      "problem": 202,
+      "team": 90,
+      "submissionTime": 137,
+      "score": "0.000000"
+    },
+    {
+      "id": 524,
+      "result": "No",
+      "problem": 202,
+      "team": 60,
+      "submissionTime": 137,
+      "score": "50.000000"
+    },
+    {
+      "id": 525,
+      "result": "No",
+      "problem": 207,
+      "team": 35,
+      "submissionTime": 137,
+      "score": "0.000000"
+    },
+    {
+      "id": 526,
+      "result": "No",
+      "problem": 201,
+      "team": 86,
+      "submissionTime": 137,
+      "score": "0.000000"
+    },
+    {
+      "id": 527,
+      "result": "No",
+      "problem": 207,
+      "team": 28,
+      "submissionTime": 137,
+      "score": "0.000000"
+    },
+    {
+      "id": 528,
+      "result": "No",
+      "problem": 207,
+      "team": 47,
+      "submissionTime": 137,
+      "score": "30.000000"
+    },
+    {
+      "id": 529,
+      "result": "No",
+      "problem": 202,
+      "team": 71,
+      "submissionTime": 138,
+      "score": "0.000000"
+    },
+    {
+      "id": 530,
+      "result": "No",
+      "problem": 207,
+      "team": 92,
+      "submissionTime": 139,
+      "score": "0.000000"
+    },
+    {
+      "id": 531,
+      "result": "No",
+      "problem": 202,
+      "team": 94,
+      "submissionTime": 139,
+      "score": "0.000000"
+    },
+    {
+      "id": 532,
+      "result": "No",
+      "problem": 202,
+      "team": 56,
+      "submissionTime": 139,
+      "score": "50.000000"
+    },
+    {
+      "id": 534,
+      "result": "Yes",
+      "problem": 208,
+      "team": 44,
+      "submissionTime": 139,
+      "score": "100.000000"
+    },
+    {
+      "id": 535,
+      "result": "No",
+      "problem": 203,
+      "team": 95,
+      "submissionTime": 139,
+      "score": "90.000000"
+    },
+    {
+      "id": 537,
+      "result": "No",
+      "problem": 202,
+      "team": 94,
+      "submissionTime": 140,
+      "score": "0.000000"
+    },
+    {
+      "id": 538,
+      "result": "No",
+      "problem": 201,
+      "team": 89,
+      "submissionTime": 140,
+      "score": "0.000000"
+    },
+    {
+      "id": 539,
+      "result": "No",
+      "problem": 202,
+      "team": 90,
+      "submissionTime": 140,
+      "score": "0.000000"
+    },
+    {
+      "id": 540,
+      "result": "No",
+      "problem": 201,
+      "team": 93,
+      "submissionTime": 140,
+      "score": "0.000000"
+    },
+    {
+      "id": 543,
+      "result": "No",
+      "problem": 207,
+      "team": 92,
+      "submissionTime": 144,
+      "score": "0.000000"
+    },
+    {
+      "id": 544,
+      "result": "No",
+      "problem": 201,
+      "team": 54,
+      "submissionTime": 144,
+      "score": "0.000000"
+    },
+    {
+      "id": 546,
+      "result": "Yes",
+      "problem": 201,
+      "team": 59,
+      "submissionTime": 144,
+      "score": "100.000000"
+    },
+    {
+      "id": 547,
+      "result": "No",
+      "problem": 202,
+      "team": 62,
+      "submissionTime": 144,
+      "score": "0.000000"
+    },
+    {
+      "id": 548,
+      "result": "No",
+      "problem": 201,
+      "team": 86,
+      "submissionTime": 144,
+      "score": "0.000000"
+    },
+    {
+      "id": 549,
+      "result": "Yes",
+      "problem": 207,
+      "team": 47,
+      "submissionTime": 144,
+      "score": "100.000000"
+    },
+    {
+      "id": 550,
+      "result": "No",
+      "problem": 207,
+      "team": 66,
+      "submissionTime": 144,
+      "score": "0.000000"
+    },
+    {
+      "id": 551,
+      "result": "No",
+      "problem": 202,
+      "team": 71,
+      "submissionTime": 145,
+      "score": "50.000000"
+    },
+    {
+      "id": 552,
+      "result": "Yes",
+      "problem": 201,
+      "team": 84,
+      "submissionTime": 145,
+      "score": "100.000000"
+    },
+    {
+      "id": 553,
+      "result": "No",
+      "problem": 203,
+      "team": 25,
+      "submissionTime": 145,
+      "score": "90.000000"
+    },
+    {
+      "id": 554,
+      "result": "No",
+      "problem": 201,
+      "team": 41,
+      "submissionTime": 146,
+      "score": "0.000000"
+    },
+    {
+      "id": 555,
+      "result": "Yes",
+      "problem": 202,
+      "team": 88,
+      "submissionTime": 146,
+      "score": "100.000000"
+    },
+    {
+      "id": 556,
+      "result": "Yes",
+      "problem": 207,
+      "team": 82,
+      "submissionTime": 146,
+      "score": "100.000000"
+    },
+    {
+      "id": 557,
+      "result": "Yes",
+      "problem": 201,
+      "team": 86,
+      "submissionTime": 146,
+      "score": "100.000000"
+    },
+    {
+      "id": 558,
+      "result": "No",
+      "problem": 203,
+      "team": 52,
+      "submissionTime": 148,
+      "score": "0.000000"
+    },
+    {
+      "id": 559,
+      "result": "No",
+      "problem": 207,
+      "team": 75,
+      "submissionTime": 148,
+      "score": "30.000000"
+    },
+    {
+      "id": 560,
+      "result": "No",
+      "problem": 205,
+      "team": 91,
+      "submissionTime": 149,
+      "score": "20.000000"
+    },
+    {
+      "id": 561,
+      "result": "No",
+      "problem": 205,
+      "team": 88,
+      "submissionTime": 151,
+      "score": "20.000000"
+    },
+    {
+      "id": 562,
+      "result": "No",
+      "problem": 207,
+      "team": 35,
+      "submissionTime": 151,
+      "score": "30.000000"
+    },
+    {
+      "id": 563,
+      "result": "No",
+      "problem": 201,
+      "team": 89,
+      "submissionTime": 151,
+      "score": "0.000000"
+    },
+    {
+      "id": 564,
+      "result": "No",
+      "problem": 202,
+      "team": 46,
+      "submissionTime": 151,
+      "score": "0.000000"
+    },
+    {
+      "id": 565,
+      "result": "No",
+      "problem": 207,
+      "team": 71,
+      "submissionTime": 151,
+      "score": "30.000000"
+    },
+    {
+      "id": 566,
+      "result": "Yes",
+      "problem": 202,
+      "team": 76,
+      "submissionTime": 151,
+      "score": "100.000000"
+    },
+    {
+      "id": 567,
+      "result": "No",
+      "problem": 202,
+      "team": 94,
+      "submissionTime": 151,
+      "score": "0.000000"
+    },
+    {
+      "id": 568,
+      "result": "No",
+      "problem": 202,
+      "team": 62,
+      "submissionTime": 152,
+      "score": "0.000000"
+    },
+    {
+      "id": 569,
+      "result": "No",
+      "problem": 202,
+      "team": 90,
+      "submissionTime": 152,
+      "score": "0.000000"
+    },
+    {
+      "id": 570,
+      "result": "No",
+      "problem": 202,
+      "team": 55,
+      "submissionTime": 152,
+      "score": "0.000000"
+    },
+    {
+      "id": 571,
+      "result": "Yes",
+      "problem": 207,
+      "team": 87,
+      "submissionTime": 152,
+      "score": "100.000000"
+    },
+    {
+      "id": 572,
+      "result": "No",
+      "problem": 205,
+      "team": 84,
+      "submissionTime": 152,
+      "score": "0.000000"
+    },
+    {
+      "id": 573,
+      "result": "No",
+      "problem": 207,
+      "team": 72,
+      "submissionTime": 152,
+      "score": "0.000000"
+    },
+    {
+      "id": 574,
+      "result": "Yes",
+      "problem": 207,
+      "team": 87,
+      "submissionTime": 153,
+      "score": "100.000000"
+    },
+    {
+      "id": 575,
+      "result": "No",
+      "problem": 207,
+      "team": 39,
+      "submissionTime": 153,
+      "score": "30.000000"
+    },
+    {
+      "id": 576,
+      "result": "No",
+      "problem": 207,
+      "team": 40,
+      "submissionTime": 153,
+      "score": "0.000000"
+    },
+    {
+      "id": 577,
+      "result": "No",
+      "problem": 207,
+      "team": 66,
+      "submissionTime": 153,
+      "score": "0.000000"
+    },
+    {
+      "id": 578,
+      "result": "No",
+      "problem": 203,
+      "team": 33,
+      "submissionTime": 153,
+      "score": "90.000000"
+    },
+    {
+      "id": 579,
+      "result": "Yes",
+      "problem": 207,
+      "team": 74,
+      "submissionTime": 153,
+      "score": "100.000000"
+    },
+    {
+      "id": 580,
+      "result": "No",
+      "problem": 207,
+      "team": 64,
+      "submissionTime": 154,
+      "score": "30.000000"
+    },
+    {
+      "id": 581,
+      "result": "No",
+      "problem": 202,
+      "team": 77,
+      "submissionTime": 154,
+      "score": "0.000000"
+    },
+    {
+      "id": 582,
+      "result": "No",
+      "problem": 201,
+      "team": 54,
+      "submissionTime": 155,
+      "score": "0.000000"
+    },
+    {
+      "id": 583,
+      "result": "No",
+      "problem": 202,
+      "team": 46,
+      "submissionTime": 155,
+      "score": "0.000000"
+    },
+    {
+      "id": 584,
+      "result": "No",
+      "problem": 207,
+      "team": 28,
+      "submissionTime": 155,
+      "score": "30.000000"
+    },
+    {
+      "id": 585,
+      "result": "No",
+      "problem": 205,
+      "team": 31,
+      "submissionTime": 156,
+      "score": "0.000000"
+    },
+    {
+      "id": 586,
+      "result": "No",
+      "problem": 207,
+      "team": 92,
+      "submissionTime": 156,
+      "score": "0.000000"
+    },
+    {
+      "id": 587,
+      "result": "No",
+      "problem": 202,
+      "team": 94,
+      "submissionTime": 157,
+      "score": "0.000000"
+    },
+    {
+      "id": 589,
+      "result": "No",
+      "problem": 205,
+      "team": 95,
+      "submissionTime": 157,
+      "score": "20.000000"
+    },
+    {
+      "id": 590,
+      "result": "No",
+      "problem": 202,
+      "team": 92,
+      "submissionTime": 158,
+      "score": "0.000000"
+    },
+    {
+      "id": 591,
+      "result": "No",
+      "problem": 207,
+      "team": 35,
+      "submissionTime": 158,
+      "score": "30.000000"
+    },
+    {
+      "id": 592,
+      "result": "No",
+      "problem": 201,
+      "team": 41,
+      "submissionTime": 158,
+      "score": "0.000000"
+    },
+    {
+      "id": 593,
+      "result": "No",
+      "problem": 207,
+      "team": 72,
+      "submissionTime": 158,
+      "score": "0.000000"
+    },
+    {
+      "id": 594,
+      "result": "No",
+      "problem": 202,
+      "team": 31,
+      "submissionTime": 160,
+      "score": "0.000000"
+    },
+    {
+      "id": 595,
+      "result": "Yes",
+      "problem": 207,
+      "team": 91,
+      "submissionTime": 160,
+      "score": "100.000000"
+    },
+    {
+      "id": 597,
+      "result": "No",
+      "problem": 205,
+      "team": 60,
+      "submissionTime": 160,
+      "score": "20.000000"
+    },
+    {
+      "id": 599,
+      "result": "No",
+      "problem": 205,
+      "team": 50,
+      "submissionTime": 160,
+      "score": "0.000000"
+    },
+    {
+      "id": 600,
+      "result": "No",
+      "problem": 202,
+      "team": 31,
+      "submissionTime": 161,
+      "score": "0.000000"
+    },
+    {
+      "id": 602,
+      "result": "Yes",
+      "problem": 207,
+      "team": 91,
+      "submissionTime": 161,
+      "score": "100.000000"
+    },
+    {
+      "id": 603,
+      "result": "Yes",
+      "problem": 203,
+      "team": 33,
+      "submissionTime": 161,
+      "score": "100.000000"
+    },
+    {
+      "id": 604,
+      "result": "No",
+      "problem": 202,
+      "team": 89,
+      "submissionTime": 164,
+      "score": "0.000000"
+    },
+    {
+      "id": 605,
+      "result": "No",
+      "problem": 208,
+      "team": 26,
+      "submissionTime": 164,
+      "score": "0.000000"
+    },
+    {
+      "id": 606,
+      "result": "No",
+      "problem": 202,
+      "team": 92,
+      "submissionTime": 165,
+      "score": "0.000000"
+    },
+    {
+      "id": 607,
+      "result": "No",
+      "problem": 202,
+      "team": 77,
+      "submissionTime": 165,
+      "score": "0.000000"
+    },
+    {
+      "id": 608,
+      "result": "No",
+      "problem": 207,
+      "team": 40,
+      "submissionTime": 165,
+      "score": "0.000000"
+    },
+    {
+      "id": 609,
+      "result": "No",
+      "problem": 201,
+      "team": 71,
+      "submissionTime": 165,
+      "score": "0.000000"
+    },
+    {
+      "id": 610,
+      "result": "No",
+      "problem": 207,
+      "team": 83,
+      "submissionTime": 165,
+      "score": "0.000000"
+    },
+    {
+      "id": 611,
+      "result": "No",
+      "problem": 205,
+      "team": 64,
+      "submissionTime": 165,
+      "score": "0.000000"
+    },
+    {
+      "id": 612,
+      "result": "Yes",
+      "problem": 208,
+      "team": 63,
+      "submissionTime": 166,
+      "score": "100.000000"
+    },
+    {
+      "id": 613,
+      "result": "No",
+      "problem": 207,
+      "team": 44,
+      "submissionTime": 166,
+      "score": "30.000000"
+    },
+    {
+      "id": 614,
+      "result": "No",
+      "problem": 207,
+      "team": 66,
+      "submissionTime": 167,
+      "score": "0.000000"
+    },
+    {
+      "id": 615,
+      "result": "No",
+      "problem": 202,
+      "team": 25,
+      "submissionTime": 168,
+      "score": "50.000000"
+    },
+    {
+      "id": 616,
+      "result": "Yes",
+      "problem": 208,
+      "team": 63,
+      "submissionTime": 168,
+      "score": "100.000000"
+    },
+    {
+      "id": 617,
+      "result": "No",
+      "problem": 201,
+      "team": 71,
+      "submissionTime": 169,
+      "score": "0.000000"
+    },
+    {
+      "id": 619,
+      "result": "Yes",
+      "problem": 208,
+      "team": 63,
+      "submissionTime": 169,
+      "score": "100.000000"
+    },
+    {
+      "id": 620,
+      "result": "No",
+      "problem": 207,
+      "team": 44,
+      "submissionTime": 169,
+      "score": "30.000000"
+    },
+    {
+      "id": 621,
+      "result": "No",
+      "problem": 201,
+      "team": 71,
+      "submissionTime": 169,
+      "score": "0.000000"
+    },
+    {
+      "id": 622,
+      "result": "Yes",
+      "problem": 208,
+      "team": 63,
+      "submissionTime": 169,
+      "score": "100.000000"
+    },
+    {
+      "id": 623,
+      "result": "No",
+      "problem": 205,
+      "team": 84,
+      "submissionTime": 170,
+      "score": "20.000000"
+    },
+    {
+      "id": 624,
+      "result": "Yes",
+      "problem": 205,
+      "team": 78,
+      "submissionTime": 171,
+      "score": "100.000000"
+    },
+    {
+      "id": 625,
+      "result": "Yes",
+      "problem": 201,
+      "team": 45,
+      "submissionTime": 172,
+      "score": "100.000000"
+    },
+    {
+      "id": 627,
+      "result": "No",
+      "problem": 202,
+      "team": 68,
+      "submissionTime": 172,
+      "score": "0.000000"
+    },
+    {
+      "id": 628,
+      "result": "Yes",
+      "problem": 205,
+      "team": 100,
+      "submissionTime": 172,
+      "score": "100.000000"
+    },
+    {
+      "id": 629,
+      "result": "No",
+      "problem": 204,
+      "team": 57,
+      "submissionTime": 172,
+      "score": "0.000000"
+    },
+    {
+      "id": 630,
+      "result": "No",
+      "problem": 202,
+      "team": 31,
+      "submissionTime": 172,
+      "score": "0.000000"
+    },
+    {
+      "id": 631,
+      "result": "No",
+      "problem": 205,
+      "team": 47,
+      "submissionTime": 172,
+      "score": "20.000000"
+    },
+    {
+      "id": 632,
+      "result": "No",
+      "problem": 201,
+      "team": 54,
+      "submissionTime": 172,
+      "score": "0.000000"
+    },
+    {
+      "id": 633,
+      "result": "No",
+      "problem": 207,
+      "team": 66,
+      "submissionTime": 172,
+      "score": "0.000000"
+    },
+    {
+      "id": 634,
+      "result": "No",
+      "problem": 202,
+      "team": 31,
+      "submissionTime": 173,
+      "score": "0.000000"
+    },
+    {
+      "id": 635,
+      "result": "No",
+      "problem": 205,
+      "team": 70,
+      "submissionTime": 173,
+      "score": "20.000000"
+    },
+    {
+      "id": 636,
+      "result": "No",
+      "problem": 202,
+      "team": 62,
+      "submissionTime": 173,
+      "score": "0.000000"
+    },
+    {
+      "id": 637,
+      "result": "No",
+      "problem": 205,
+      "team": 61,
+      "submissionTime": 174,
+      "score": "20.000000"
+    },
+    {
+      "id": 638,
+      "result": "No",
+      "problem": 205,
+      "team": 29,
+      "submissionTime": 174,
+      "score": "20.000000"
+    },
+    {
+      "id": 639,
+      "result": "No",
+      "problem": 202,
+      "team": 67,
+      "submissionTime": 174,
+      "score": "0.000000"
+    },
+    {
+      "id": 640,
+      "result": "No",
+      "problem": 207,
+      "team": 34,
+      "submissionTime": 174,
+      "score": "0.000000"
+    },
+    {
+      "id": 641,
+      "result": "No",
+      "problem": 205,
+      "team": 70,
+      "submissionTime": 174,
+      "score": "20.000000"
+    },
+    {
+      "id": 642,
+      "result": "No",
+      "problem": 201,
+      "team": 71,
+      "submissionTime": 174,
+      "score": "0.000000"
+    },
+    {
+      "id": 643,
+      "result": "No",
+      "problem": 205,
+      "team": 29,
+      "submissionTime": 174,
+      "score": "20.000000"
+    },
+    {
+      "id": 644,
+      "result": "Yes",
+      "problem": 208,
+      "team": 36,
+      "submissionTime": 175,
+      "score": "100.000000"
+    },
+    {
+      "id": 645,
+      "result": "No",
+      "problem": 205,
+      "team": 64,
+      "submissionTime": 175,
+      "score": "0.000000"
+    },
+    {
+      "id": 646,
+      "result": "No",
+      "problem": 205,
+      "team": 61,
+      "submissionTime": 175,
+      "score": "20.000000"
+    },
+    {
+      "id": 647,
+      "result": "No",
+      "problem": 202,
+      "team": 62,
+      "submissionTime": 175,
+      "score": "0.000000"
+    },
+    {
+      "id": 648,
+      "result": "No",
+      "problem": 205,
+      "team": 61,
+      "submissionTime": 175,
+      "score": "20.000000"
+    },
+    {
+      "id": 649,
+      "result": "No",
+      "problem": 202,
+      "team": 89,
+      "submissionTime": 176,
+      "score": "0.000000"
+    },
+    {
+      "id": 650,
+      "result": "No",
+      "problem": 201,
+      "team": 71,
+      "submissionTime": 176,
+      "score": "0.000000"
+    },
+    {
+      "id": 651,
+      "result": "No",
+      "problem": 205,
+      "team": 90,
+      "submissionTime": 176,
+      "score": "40.000000"
+    },
+    {
+      "id": 652,
+      "result": "No",
+      "problem": 202,
+      "team": 25,
+      "submissionTime": 177,
+      "score": "50.000000"
+    },
+    {
+      "id": 653,
+      "result": "No",
+      "problem": 201,
+      "team": 71,
+      "submissionTime": 177,
+      "score": "0.000000"
+    },
+    {
+      "id": 654,
+      "result": "No",
+      "problem": 202,
+      "team": 62,
+      "submissionTime": 177,
+      "score": "0.000000"
+    },
+    {
+      "id": 655,
+      "result": "No",
+      "problem": 207,
+      "team": 41,
+      "submissionTime": 177,
+      "score": "30.000000"
+    },
+    {
+      "id": 656,
+      "result": "No",
+      "problem": 205,
+      "team": 64,
+      "submissionTime": 177,
+      "score": "20.000000"
+    },
+    {
+      "id": 657,
+      "result": "No",
+      "problem": 202,
+      "team": 68,
+      "submissionTime": 178,
+      "score": "0.000000"
+    },
+    {
+      "id": 658,
+      "result": "No",
+      "problem": 201,
+      "team": 51,
+      "submissionTime": 178,
+      "score": "0.000000"
+    },
+    {
+      "id": 659,
+      "result": "No",
+      "problem": 202,
+      "team": 89,
+      "submissionTime": 178,
+      "score": "0.000000"
+    },
+    {
+      "id": 660,
+      "result": "No",
+      "problem": 208,
+      "team": 26,
+      "submissionTime": 178,
+      "score": "50.000000"
+    },
+    {
+      "id": 661,
+      "result": "No",
+      "problem": 201,
+      "team": 71,
+      "submissionTime": 179,
+      "score": "0.000000"
+    },
+    {
+      "id": 662,
+      "result": "No",
+      "problem": 205,
+      "team": 83,
+      "submissionTime": 180,
+      "score": "20.000000"
+    },
+    {
+      "id": 663,
+      "result": "No",
+      "problem": 201,
+      "team": 93,
+      "submissionTime": 180,
+      "score": "0.000000"
+    },
+    {
+      "id": 665,
+      "result": "No",
+      "problem": 202,
+      "team": 87,
+      "submissionTime": 180,
+      "score": "0.000000"
+    },
+    {
+      "id": 666,
+      "result": "No",
+      "problem": 207,
+      "team": 72,
+      "submissionTime": 180,
+      "score": "0.000000"
+    },
+    {
+      "id": 667,
+      "result": "Yes",
+      "problem": 207,
+      "team": 41,
+      "submissionTime": 180,
+      "score": "100.000000"
+    },
+    {
+      "id": 668,
+      "result": "Yes",
+      "problem": 205,
+      "team": 95,
+      "submissionTime": 181,
+      "score": "100.000000"
+    },
+    {
+      "id": 669,
+      "result": "No",
+      "problem": 205,
+      "team": 50,
+      "submissionTime": 182,
+      "score": "0.000000"
+    },
+    {
+      "id": 670,
+      "result": "No",
+      "problem": 202,
+      "team": 68,
+      "submissionTime": 183,
+      "score": "0.000000"
+    },
+    {
+      "id": 671,
+      "result": "No",
+      "problem": 205,
+      "team": 39,
+      "submissionTime": 183,
+      "score": "20.000000"
+    },
+    {
+      "id": 672,
+      "result": "No",
+      "problem": 202,
+      "team": 89,
+      "submissionTime": 183,
+      "score": "50.000000"
+    },
+    {
+      "id": 673,
+      "result": "No",
+      "problem": 205,
+      "team": 55,
+      "submissionTime": 183,
+      "score": "20.000000"
+    },
+    {
+      "id": 674,
+      "result": "No",
+      "problem": 202,
+      "team": 89,
+      "submissionTime": 183,
+      "score": "50.000000"
+    },
+    {
+      "id": 675,
+      "result": "No",
+      "problem": 205,
+      "team": 58,
+      "submissionTime": 184,
+      "score": "20.000000"
+    },
+    {
+      "id": 676,
+      "result": "No",
+      "problem": 205,
+      "team": 64,
+      "submissionTime": 184,
+      "score": "40.000000"
+    },
+    {
+      "id": 677,
+      "result": "No",
+      "problem": 201,
+      "team": 44,
+      "submissionTime": 184,
+      "score": "0.000000"
+    },
+    {
+      "id": 678,
+      "result": "Yes",
+      "problem": 207,
+      "team": 40,
+      "submissionTime": 185,
+      "score": "100.000000"
+    },
+    {
+      "id": 679,
+      "result": "No",
+      "problem": 202,
+      "team": 90,
+      "submissionTime": 185,
+      "score": "0.000000"
+    },
+    {
+      "id": 680,
+      "result": "No",
+      "problem": 205,
+      "team": 35,
+      "submissionTime": 186,
+      "score": "0.000000"
+    },
+    {
+      "id": 681,
+      "result": "Yes",
+      "problem": 205,
+      "team": 61,
+      "submissionTime": 186,
+      "score": "100.000000"
+    },
+    {
+      "id": 683,
+      "result": "No",
+      "problem": 207,
+      "team": 72,
+      "submissionTime": 186,
+      "score": "0.000000"
+    },
+    {
+      "id": 684,
+      "result": "No",
+      "problem": 202,
+      "team": 67,
+      "submissionTime": 186,
+      "score": "0.000000"
+    },
+    {
+      "id": 685,
+      "result": "No",
+      "problem": 201,
+      "team": 51,
+      "submissionTime": 187,
+      "score": "0.000000"
+    },
+    {
+      "id": 686,
+      "result": "No",
+      "problem": 202,
+      "team": 90,
+      "submissionTime": 187,
+      "score": "0.000000"
+    },
+    {
+      "id": 687,
+      "result": "No",
+      "problem": 201,
+      "team": 89,
+      "submissionTime": 187,
+      "score": "0.000000"
+    },
+    {
+      "id": 688,
+      "result": "No",
+      "problem": 205,
+      "team": 31,
+      "submissionTime": 188,
+      "score": "20.000000"
+    },
+    {
+      "id": 689,
+      "result": "No",
+      "problem": 207,
+      "team": 66,
+      "submissionTime": 188,
+      "score": "0.000000"
+    },
+    {
+      "id": 690,
+      "result": "No",
+      "problem": 207,
+      "team": 72,
+      "submissionTime": 188,
+      "score": "0.000000"
+    },
+    {
+      "id": 691,
+      "result": "No",
+      "problem": 202,
+      "team": 31,
+      "submissionTime": 189,
+      "score": "0.000000"
+    },
+    {
+      "id": 692,
+      "result": "No",
+      "problem": 207,
+      "team": 66,
+      "submissionTime": 189,
+      "score": "0.000000"
+    },
+    {
+      "id": 693,
+      "result": "No",
+      "problem": 201,
+      "team": 54,
+      "submissionTime": 189,
+      "score": "0.000000"
+    },
+    {
+      "id": 694,
+      "result": "No",
+      "problem": 201,
+      "team": 28,
+      "submissionTime": 189,
+      "score": "0.000000"
+    },
+    {
+      "id": 695,
+      "result": "No",
+      "problem": 201,
+      "team": 41,
+      "submissionTime": 189,
+      "score": "0.000000"
+    },
+    {
+      "id": 696,
+      "result": "Yes",
+      "problem": 201,
+      "team": 51,
+      "submissionTime": 190,
+      "score": "100.000000"
+    },
+    {
+      "id": 697,
+      "result": "No",
+      "problem": 207,
+      "team": 86,
+      "submissionTime": 190,
+      "score": "30.000000"
+    },
+    {
+      "id": 698,
+      "result": "No",
+      "problem": 202,
+      "team": 68,
+      "submissionTime": 190,
+      "score": "0.000000"
+    },
+    {
+      "id": 699,
+      "result": "No",
+      "problem": 205,
+      "team": 35,
+      "submissionTime": 190,
+      "score": "20.000000"
+    },
+    {
+      "id": 701,
+      "result": "No",
+      "problem": 205,
+      "team": 55,
+      "submissionTime": 191,
+      "score": "40.000000"
+    },
+    {
+      "id": 702,
+      "result": "No",
+      "problem": 202,
+      "team": 87,
+      "submissionTime": 191,
+      "score": "50.000000"
+    },
+    {
+      "id": 703,
+      "result": "No",
+      "problem": 201,
+      "team": 44,
+      "submissionTime": 191,
+      "score": "0.000000"
+    },
+    {
+      "id": 704,
+      "result": "No",
+      "problem": 208,
+      "team": 80,
+      "submissionTime": 191,
+      "score": "50.000000"
+    },
+    {
+      "id": 705,
+      "result": "No",
+      "problem": 207,
+      "team": 92,
+      "submissionTime": 191,
+      "score": "30.000000"
+    },
+    {
+      "id": 706,
+      "result": "No",
+      "problem": 202,
+      "team": 68,
+      "submissionTime": 191,
+      "score": "0.000000"
+    },
+    {
+      "id": 707,
+      "result": "No",
+      "problem": 205,
+      "team": 83,
+      "submissionTime": 192,
+      "score": "40.000000"
+    },
+    {
+      "id": 708,
+      "result": "No",
+      "problem": 201,
+      "team": 43,
+      "submissionTime": 192,
+      "score": "0.000000"
+    },
+    {
+      "id": 709,
+      "result": "No",
+      "problem": 202,
+      "team": 61,
+      "submissionTime": 192,
+      "score": "50.000000"
+    },
+    {
+      "id": 710,
+      "result": "No",
+      "problem": 207,
+      "team": 66,
+      "submissionTime": 192,
+      "score": "0.000000"
+    },
+    {
+      "id": 711,
+      "result": "No",
+      "problem": 202,
+      "team": 90,
+      "submissionTime": 192,
+      "score": "0.000000"
+    },
+    {
+      "id": 712,
+      "result": "No",
+      "problem": 202,
+      "team": 95,
+      "submissionTime": 192,
+      "score": "50.000000"
+    },
+    {
+      "id": 713,
+      "result": "No",
+      "problem": 202,
+      "team": 66,
+      "submissionTime": 192,
+      "score": "0.000000"
+    },
+    {
+      "id": 714,
+      "result": "No",
+      "problem": 202,
+      "team": 92,
+      "submissionTime": 193,
+      "score": "0.000000"
+    },
+    {
+      "id": 715,
+      "result": "No",
+      "problem": 208,
+      "team": 26,
+      "submissionTime": 194,
+      "score": "0.000000"
+    },
+    {
+      "id": 716,
+      "result": "No",
+      "problem": 205,
+      "team": 76,
+      "submissionTime": 194,
+      "score": "20.000000"
+    },
+    {
+      "id": 717,
+      "result": "No",
+      "problem": 207,
+      "team": 96,
+      "submissionTime": 194,
+      "score": "0.000000"
+    },
+    {
+      "id": 718,
+      "result": "No",
+      "problem": 207,
+      "team": 66,
+      "submissionTime": 194,
+      "score": "0.000000"
+    },
+    {
+      "id": 719,
+      "result": "No",
+      "problem": 205,
+      "team": 82,
+      "submissionTime": 195,
+      "score": "40.000000"
+    },
+    {
+      "id": 720,
+      "result": "No",
+      "problem": 202,
+      "team": 31,
+      "submissionTime": 195,
+      "score": "0.000000"
+    },
+    {
+      "id": 721,
+      "result": "Yes",
+      "problem": 208,
+      "team": 26,
+      "submissionTime": 196,
+      "score": "100.000000"
+    },
+    {
+      "id": 723,
+      "result": "No",
+      "problem": 202,
+      "team": 91,
+      "submissionTime": 196,
+      "score": "50.000000"
+    },
+    {
+      "id": 724,
+      "result": "No",
+      "problem": 205,
+      "team": 34,
+      "submissionTime": 196,
+      "score": "20.000000"
+    },
+    {
+      "id": 725,
+      "result": "No",
+      "problem": 207,
+      "team": 66,
+      "submissionTime": 196,
+      "score": "0.000000"
+    },
+    {
+      "id": 726,
+      "result": "No",
+      "problem": 201,
+      "team": 41,
+      "submissionTime": 196,
+      "score": "0.000000"
+    },
+    {
+      "id": 727,
+      "result": "No",
+      "problem": 207,
+      "team": 69,
+      "submissionTime": 196,
+      "score": "30.000000"
+    },
+    {
+      "id": 728,
+      "result": "No",
+      "problem": 201,
+      "team": 41,
+      "submissionTime": 196,
+      "score": "0.000000"
+    },
+    {
+      "id": 729,
+      "result": "No",
+      "problem": 202,
+      "team": 90,
+      "submissionTime": 196,
+      "score": "50.000000"
+    },
+    {
+      "id": 730,
+      "result": "No",
+      "problem": 202,
+      "team": 68,
+      "submissionTime": 196,
+      "score": "0.000000"
+    },
+    {
+      "id": 731,
+      "result": "No",
+      "problem": 205,
+      "team": 50,
+      "submissionTime": 197,
+      "score": "0.000000"
+    },
+    {
+      "id": 732,
+      "result": "No",
+      "problem": 204,
+      "team": 57,
+      "submissionTime": 197,
+      "score": "0.000000"
+    },
+    {
+      "id": 734,
+      "result": "No",
+      "problem": 207,
+      "team": 83,
+      "submissionTime": 199,
+      "score": "0.000000"
+    },
+    {
+      "id": 735,
+      "result": "No",
+      "problem": 205,
+      "team": 60,
+      "submissionTime": 199,
+      "score": "20.000000"
+    },
+    {
+      "id": 736,
+      "result": "No",
+      "problem": 201,
+      "team": 44,
+      "submissionTime": 199,
+      "score": "0.000000"
+    },
+    {
+      "id": 737,
+      "result": "Yes",
+      "problem": 201,
+      "team": 93,
+      "submissionTime": 199,
+      "score": "100.000000"
+    },
+    {
+      "id": 738,
+      "result": "No",
+      "problem": 202,
+      "team": 90,
+      "submissionTime": 199,
+      "score": "0.000000"
+    },
+    {
+      "id": 739,
+      "result": "No",
+      "problem": 202,
+      "team": 68,
+      "submissionTime": 199,
+      "score": "0.000000"
+    },
+    {
+      "id": 740,
+      "result": "No",
+      "problem": 202,
+      "team": 62,
+      "submissionTime": 199,
+      "score": "0.000000"
+    }
+  ]
+}
