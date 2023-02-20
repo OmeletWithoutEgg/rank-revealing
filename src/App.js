@@ -1,6 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
-
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
@@ -32,18 +29,6 @@ if (!Array.prototype.findLastIndex) {
     return -1;
   }
 }
-
-const rankStr = rank => {
-  if (rank % 10 === 1 && rank % 100 !== 11) {
-    return rank + "st";
-  } else if (rank % 10 === 2 && rank % 100 !== 12) {
-    return rank + "nd";
-  } else if (rank % 10 === 3 && rank % 100 !== 13) {
-    return rank + "rd";
-  } else {
-    return rank + "th";
-  }
-};
 
 function RankingProblemCard({ problem, onRevealed, isActive }) {
   const classes = useStyles();
@@ -156,7 +141,7 @@ function RankingRow(props) {
       onLayoutAnimationComplete={onClimbComplete}
     >
       {/*<td className="team-total-solved">{team.total_solved}</td>*/}
-      <td className={classes.teamRank}>{rankStr(team.rank)}</td>
+      <td className={classes.teamRank}>#{team.rank}</td>
       <td className={classes.teamName}>{team.name}</td>
       {
         team.problem_details.map((problem, i) =>  {

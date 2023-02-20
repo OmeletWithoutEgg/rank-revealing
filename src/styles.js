@@ -4,6 +4,8 @@ export const useStyles = createUseStyles({
 
     teamProblemAccepted : {
         backgroundColor: 'lightgreen',
+        // background: 'rgb(22,121,9)',
+        // background: 'linear-gradient(90deg, rgba(22,121,9,1) 0%, rgba(123,255,0,1) 100%)',
     },
 
     teamProblemPartial : {
@@ -63,7 +65,10 @@ export const useStyles = createUseStyles({
         "& thead": {
             "& th": {
                 position: 'sticky',
-                top: 0, zIndex: 1, backgroundColor: 'pink',
+                top: 0,
+                zIndex: 1,
+                backgroundColor: '#32cd32',
+                color: 'white',
             },
         }
     },

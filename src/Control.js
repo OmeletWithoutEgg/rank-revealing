@@ -1,6 +1,10 @@
 import contestInfo from './data/contest.json';
 import runsInfo from './data/runs.json';
-const freeze_start = 60 * 4 - 60; // 60 minute before contest end
+
+const queryParameters = new URLSearchParams(document.location.search)
+const freeze_start = queryParameters.get("freeze_start_minute")
+  || (60 * 4 - 60) // An arbitrary default value: 60 minute before a 4-hour contest end
+
 
 export function listenNextFeed(callbackFn) {
   const handleKeyDown = event => {
