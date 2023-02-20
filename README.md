@@ -23,7 +23,14 @@
 - [ ] Set propTypes or use typescript.
 - [ ] Show first blood of each problem
 - [ ] Skip some revealing
-- [ ] award_slide.json
+- [ ] Parse and show award_slide.json
+- [ ] Fetch data instead of `import from './data/xxxxxx.json';`.
+- [ ] Set favicon.
+- [ ] Document the data flow(?)
+- [ ] Customize duration of flipping and climbing.
+
+## Disclaimer
+On old browser some animation might fail, e.g. smooth scrolling and table with `position: sticky`.
 
 ------
 
