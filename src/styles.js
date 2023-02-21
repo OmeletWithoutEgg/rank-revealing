@@ -1,5 +1,39 @@
 import { createUseStyles } from "react-jss";
 
+const style_gradient = {
+    teamProblemAccepted : {
+        background: 'linear-gradient(0deg, rgba(22,121,9,1) 0%, rgba(123,255,0,1) 100%)',
+        color: 'white',
+    },
+
+    teamProblemPartial : {
+        background: 'linear-gradient(0deg, rgba(125,79,54,1) 0%, rgba(255,173,0,1) 100%)',
+    },
+
+    teamProblemAttempted : {
+        background: 'linear-gradient(0deg, rgba(125,79,54,1) 0%, rgba(255,36,0,1) 100%)',
+    },
+
+    teamProblemPending : {
+        background: 'linear-gradient(0deg, rgba(71,85,106,1) 0%, rgba(148,228,233,1) 100%)',
+    },
+};
+
+const style_flat = {
+    teamProblemAccepted : {
+        backgroundColor: 'lightgreen',
+    },
+    teamProblemPartial : {
+        background: 'orange',
+    },
+    teamProblemAttempted : {
+        background: 'red',
+    },
+    teamProblemPending : {
+        background: 'lightblue',
+    },
+};
+
 export const useStyles = createUseStyles({
     teamRowRevealing: {
         backgroundColor: '#aaaaff',
@@ -9,23 +43,11 @@ export const useStyles = createUseStyles({
         backgroundColor: '#ccccff',
     },
 
-    teamProblemAccepted : {
-        backgroundColor: 'lightgreen',
-        // background: 'rgb(22,121,9)',
-        // background: 'linear-gradient(90deg, rgba(22,121,9,1) 0%, rgba(123,255,0,1) 100%)',
+    teamRowNotYetChecked: {
+        backgroundColor: '#E6EBF0',
     },
 
-    teamProblemPartial : {
-        backgroundColor: '#ff3300',
-    },
-
-    teamProblemTried : {
-        backgroundColor: 'red',
-    },
-
-    teamProblemPending : {
-        backgroundColor: 'lightblue',
-    },
+    ...style_flat,
 
     teamProblem: {
         width: 70,
@@ -64,7 +86,7 @@ export const useStyles = createUseStyles({
         },
         "& tbody": {
             "& tr, & div": { height: 90 },
-        }
+        },
     },
 
     stickyHead: {

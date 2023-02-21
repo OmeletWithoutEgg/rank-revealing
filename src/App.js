@@ -94,6 +94,8 @@ function RankingRow({ team, onRevealed, onClimbComplete, onNoClimb }) {
     classNames.push(classes.teamRowRevealed);
   } else if (team.revealStatus === 'revealing') {
     classNames.push(classes.teamRowRevealing);
+  } else {
+    classNames.push(classes.teamRowNotYetChecked);
   }
 
   useEffect(() => {
