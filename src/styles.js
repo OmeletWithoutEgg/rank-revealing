@@ -1,6 +1,13 @@
 import { createUseStyles } from "react-jss";
 
 export const useStyles = createUseStyles({
+    teamRowRevealing: {
+        backgroundColor: '#aaaaff',
+    },
+
+    teamRowRevealed: {
+        backgroundColor: '#ccccff',
+    },
 
     teamProblemAccepted : {
         backgroundColor: 'lightgreen',
@@ -71,6 +78,11 @@ export const useStyles = createUseStyles({
                 color: 'white',
             },
         }
+    },
+
+    stickyRow: {
+        position: 'sticky',
+        top: -100,
     },
 
 });

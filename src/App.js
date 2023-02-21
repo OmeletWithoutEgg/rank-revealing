@@ -32,19 +32,11 @@ if (!Array.prototype.findLastIndex) {
 
 function RankingProblemCard({ problem, onRevealed, isActive }) {
   const classes = useStyles();
-  const M = problem.hidden_results.length;
-  const faces = problem.hidden_results.map((p, i) => {
-    return {
+  const faces = problem.hidden_results.map(p => ({
       ...p,
-      pending_tries: M - i - 1,
       isImportantFace: p.is_important,
-      onFlippingComplete: () => {
-        let q = { ...p };
-        q.pending_tries = M - i - 1;
-        onRevealed(q);
-      },
-    };
-  });
+      onFlippingComplete: () => { onRevealed(p); },
+    }));
 
   const renderFace = (p) => {
     let classNames = [ classes.teamProblemCard, classes.teamProblem ]
@@ -94,23 +86,15 @@ function RankingProblemCard({ problem, onRevealed, isActive }) {
   )
 }
 
-function RankingRow(props) {
-  const {
-    team,
-    onRevealed,
-    onClimbComplete,
-    onNoClimb,
-  } = props;
+function RankingRow({ team, onRevealed, onClimbComplete, onNoClimb }) {
   const classes = useStyles();
   const ref = useRef(null);
-  const backgroundColor =
-    team.revealStatus === 'revealed' ? '#ccccff' :
-    team.revealStatus === 'revealing' ? '#aaaaff' : null
-  const trStyle = {
-    position: 'sticky',
-    top: -100,
-    backgroundColor,
-  };
+  const classNames = [classes.stickyRow];
+  if (team.revealStatus === 'revealed') {
+    classNames.push(classes.teamRowRevealed);
+  } else if (team.revealStatus === 'revealing') {
+    classNames.push(classes.teamRowRevealing);
+  }
 
   useEffect(() => {
     if (ref.current && team.revealStatus === 'revealing') {
@@ -136,7 +120,7 @@ function RankingRow(props) {
   return (
     <motion.tr
       ref={ref}
-      style={trStyle}
+      className={classNames.join(' ')}
       layout
       onLayoutAnimationComplete={onClimbComplete}
     >
@@ -144,7 +128,7 @@ function RankingRow(props) {
       <td className={classes.teamRank}>#{team.rank}</td>
       <td className={classes.teamName}>{team.name}</td>
       {
-        team.problem_details.map((problem, i) =>  {
+        team.problem_details.map(problem =>  {
           const onSingleRevealed = updatedProblem => {
             const event = {
               ...updatedProblem,

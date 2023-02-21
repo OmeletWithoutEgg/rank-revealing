@@ -263,7 +263,13 @@ let { teams, problems } = contestInfo;
     let { problem_details } = team;
     problem_details = problem_details.map(problem => {
       const { hidden_results } = problem;
-      let q = [...hidden_results];
+      const M = hidden_results.length;
+      let q = hidden_results.map((p, i) => {
+        return {
+          ...p,
+          pending_tries: M - i - 1,
+        };
+      });
       q[q.length - 1].is_important = true;
       q[q.length - 1].is_final = true; // ?
       const is_final = q.length === 1;
